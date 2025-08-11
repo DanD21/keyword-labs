@@ -23,12 +23,12 @@ const StatsSection = () => {
               </div>
               <div className="text-2xl ml-2">M+</div>
             </div>
-            <p className="text-gray-300 mt-4">
+            <p className="reveal-text text-gray-300 mt-4">
               Professionals upskilled in AI via our platforms
             </p>
             <a
               href="#"
-              className="text-green-400 mt-2 inline-block hover:underline"
+              className="reveal-text text-green-400 mt-2 inline-block hover:underline"
             >
               Watch our content here →
             </a>
@@ -44,7 +44,7 @@ const StatsSection = () => {
               </div>
               <div className="text-2xl ml-2">+</div>
             </div>
-            <p className="text-gray-300 mt-4">
+            <p className="reveal-text text-gray-300 mt-4">
               AI Opportunities identified for businesses
             </p>
           </div>
@@ -59,7 +59,7 @@ const StatsSection = () => {
               </div>
               <div className="text-2xl ml-2">+</div>
             </div>
-            <p className="text-gray-300 mt-4">
+            <p className="reveal-text text-gray-300 mt-4">
               Bespoke AI solutions developed
             </p>
           </div>

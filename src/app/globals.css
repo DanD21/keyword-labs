@@ -38,14 +38,36 @@ body {
 
 /* Text reveal animation classes */
 .reveal-text {
-  opacity: 1; /* Visible by default - GSAP will handle hiding during animation */
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal-text.animate {
+  opacity: 1;
   transform: translateY(0);
 }
 
 /* Circle animation classes */
 .circle-animation, .circle-outer, .circle-inner, .educate-circle, .develop-circle {
-  opacity: 1; /* Visible by default - GSAP will handle hiding during animation */
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.circle-animation.animate, .circle-outer.animate, .circle-inner.animate, 
+.educate-circle.animate, .develop-circle.animate {
+  opacity: 1;
   transform: scale(1);
+}
+
+/* Stagger animation for multiple circles */
+.educate-circle {
+  transition-delay: calc(var(--delay, 0) * 0.1s);
+}
+
+.develop-circle {
+  transition-delay: calc(var(--delay, 0) * 0.15s);
 }
 
 /* Immediate visibility for users with reduced motion preferences */

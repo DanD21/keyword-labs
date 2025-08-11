@@ -23,8 +23,8 @@ const CircleSection: React.FC<CircleSectionProps> = ({
         <div className="circle-container h-64 flex items-center justify-center mb-12">
           {circleConfig === "concentric" && (
             <div className="relative flex items-center justify-center">
-              <div className="circle-outer w-48 h-48 rounded-full border-2 border-green-400 opacity-30"></div>
-              <div className="circle-inner w-32 h-32 rounded-full bg-green-400 opacity-60 absolute"></div>
+              <div className="circle-animation circle-outer w-48 h-48 rounded-full border-2 border-green-400 opacity-30"></div>
+              <div className="circle-animation circle-inner w-32 h-32 rounded-full bg-green-400 opacity-60 absolute"></div>
             </div>
           )}
           {circleConfig === "row" && (

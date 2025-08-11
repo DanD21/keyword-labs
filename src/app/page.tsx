@@ -7,14 +7,18 @@ import HeroSection from "@/components/HeroSection";
 import CircleSection from "@/components/CircleSection";
 import StatsSection from "@/components/StatsSection";
 import ContactModal from "@/components/ContactModal";
-import { initializeAnimations } from "@/utils/animations";
+import { initializeSimpleAnimations } from "@/utils/simpleAnimations";
 
 export default function Home() {
   const [isContactOpen, setIsContactOpen] = useState(false);
 
   useEffect(() => {
-    // Initialize GSAP animations
-    initializeAnimations();
+    // Simple timing for Intersection Observer - much more reliable
+    const timer = setTimeout(() => {
+      initializeSimpleAnimations();
+    }, 100);
+    
+    return () => clearTimeout(timer);
   }, []);
 
   const handleContactOpen = () => {
@@ -85,12 +89,11 @@ export default function Home() {
       {/* Section 8: Partner logos */}
       <Section className="partners-section">
         <div className="flex justify-center items-center space-x-12 opacity-60">
-          {/* Partner logos placeholder */}
-          <div className="text-gray-400">Citation</div>
-          <div className="text-gray-400">ReadyRNs</div>
-          <div className="text-gray-400">SHOPSOLAR</div>
-          <div className="text-gray-400">Partner 4</div>
-          <div className="text-gray-400">Partner 5</div>
+          <div className="reveal-text text-gray-400">Citation</div>
+          <div className="reveal-text text-gray-400">ReadyRNs</div>
+          <div className="reveal-text text-gray-400">SHOPSOLAR</div>
+          <div className="reveal-text text-gray-400">Partner 4</div>
+          <div className="reveal-text text-gray-400">Partner 5</div>
         </div>
       </Section>
 
