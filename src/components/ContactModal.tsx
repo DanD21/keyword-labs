@@ -35,24 +35,24 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
         }`}
         onClick={handleClose}
       ></div>
-      <div className={`absolute right-0 top-0 h-full w-full max-w-2xl bg-gray-100 p-8 overflow-y-auto transform transition-transform duration-300 ease-out ${
+      <div className={`absolute right-0 top-0 h-full w-full sm:max-w-2xl bg-gray-100 p-4 sm:p-8 overflow-y-auto transform transition-transform duration-300 ease-out ${
         isAnimating ? 'translate-x-0' : 'translate-x-full'
       }`}>
-        <div className="flex justify-between items-center mb-8">
-          <h3 className="text-2xl font-light text-gray-900">
+        <div className="flex justify-between items-center mb-6 sm:mb-8">
+          <h3 className="text-xl sm:text-2xl font-light text-gray-900">
             Let's scale your SEO
           </h3>
           <button
             onClick={handleClose}
-            className="text-3xl text-gray-900 hover:text-gray-600"
+            className="text-2xl sm:text-3xl text-gray-900 hover:text-gray-600"
           >
             ×
           </button>
         </div>
 
         {/* Form fields */}
-        <form className="space-y-6 text-gray-900">
-          <div className="grid md:grid-cols-2 gap-6">
+        <form className="space-y-4 sm:space-y-6 text-gray-900">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
             <input
               placeholder="Name"
               className="w-full p-3 border-b border-gray-300 bg-transparent focus:border-gray-900 outline-none transition-colors"
@@ -69,7 +69,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
             className="w-full p-3 border-b border-gray-300 bg-transparent focus:border-gray-900 outline-none transition-colors"
           />
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
             <input
               placeholder="Enter company name"
               className="w-full p-3 border-b border-gray-300 bg-transparent focus:border-gray-900 outline-none transition-colors"
@@ -81,7 +81,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
             />
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
             <select className="w-full p-3 border-b border-gray-300 bg-transparent focus:border-gray-900 outline-none transition-colors">
               <option>Select company size</option>
               <option>1-10 employees</option>
@@ -119,7 +119,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
 
           <button
             type="submit"
-            className="bg-gray-900 text-white px-8 py-3 rounded-full hover:bg-gray-700 transition-colors"
+            className="w-full sm:w-auto bg-gray-900 text-white px-6 sm:px-8 py-3 rounded-full hover:bg-gray-700 transition-colors"
           >
             Send inquiry
           </button>

@@ -9,8 +9,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Keyword Labs - AI Transformation Partner",
-  description: "We put AI at the center of everything we do. Your trusted partner in becoming an AI-first company.",
+  title: "Keyword Labs - AI-Powered SEO Revolution",
+  description: "We put AI at the center of SEO strategy. Your trusted partner in dominating search rankings with intelligent automation.",
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({

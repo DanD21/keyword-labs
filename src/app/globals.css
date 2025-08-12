@@ -119,6 +119,81 @@ body {
   animation-play-state: paused;
 }
 
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  /* Keep scroll snap but make it less strict for mobile */
+  .scroll-container {
+    scroll-snap-type: y proximity;
+  }
+  
+  .section {
+    @apply h-screen px-4 py-8;
+  }
+  
+  /* Moving partners optimization for mobile */
+  .moving-partners-track {
+    animation-duration: 15s; /* Faster on mobile */
+  }
+  
+  .partner-logo {
+    font-size: 0.75rem;
+    margin: 0 0.5rem;
+  }
+  
+  /* Adjust circle animations for mobile */
+  .circle-container {
+    @apply h-32 mb-6;
+  }
+  
+  .circle-outer {
+    @apply w-24 h-24;
+  }
+  
+  .circle-inner {
+    @apply w-16 h-16;
+  }
+  
+  .educate-circle {
+    @apply w-8 h-8;
+  }
+  
+  .develop-circle {
+    @apply w-8 h-8;
+  }
+  
+  /* Adjust cluster positioning for mobile */
+  .relative.w-48.h-40 {
+    @apply w-32 h-28;
+  }
+  
+  /* Prevent horizontal overflow */
+  body {
+    overflow-x: hidden;
+  }
+  
+  /* Improve text readability on mobile */
+  .reveal-text {
+    line-height: 1.2;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .section {
+    @apply px-3 py-6;
+  }
+  
+  .partner-logo {
+    font-size: 0.6875rem;
+    margin: 0 0.25rem;
+  }
+  
+  /* Reduce animation complexity on very small screens */
+  .moving-partners-track {
+    animation-duration: 12s;
+  }
+}
+
 /* Immediate visibility for users with reduced motion preferences */
 @media (prefers-reduced-motion: reduce) {
   .reveal-text, .circle-animation, .circle-outer, .circle-inner, .educate-circle, .develop-circle {

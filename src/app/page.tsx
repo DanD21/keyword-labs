@@ -38,13 +38,13 @@ export default function Home() {
 
       {/* Section 2: Value Proposition */}
       <Section className="value-section">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="reveal-text text-5xl md:text-7xl font-light leading-tight">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="reveal-text text-4xl sm:text-5xl md:text-7xl font-light leading-tight">
             We put AI at the center
             <br />
             of <span className="text-green-400">SEO strategy</span>.
           </h2>
-          <p className="reveal-text text-xl md:text-2xl mt-8 text-gray-300">
+          <p className="reveal-text text-xl sm:text-xl md:text-2xl mt-6 md:mt-8 text-gray-300">
             Your trusted partner in dominating search rankings with intelligent automation.
           </p>
         </div>
@@ -52,11 +52,11 @@ export default function Home() {
 
       {/* Section 3: Process Introduction */}
       <Section className="process-section">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="reveal-text text-5xl md:text-7xl font-light leading-tight">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="reveal-text text-4xl sm:text-5xl md:text-7xl font-light leading-tight">
             We spend our days guiding companies
-            <br />
-            through our 3-step{" "}
+            <br className="hidden sm:block" />
+            <span className="sm:hidden"> </span>through our 3-step{" "}
             <span className="text-green-400">SEO AI</span> Journey.
           </h2>
         </div>
@@ -90,7 +90,7 @@ export default function Home() {
       <Section className="partners-cta-section">
         <div className="h-full flex flex-col">
           {/* Moving Partners positioned below navbar area */}
-          <div className="absolute top-32 left-0 w-full py-4 overflow-hidden">
+          <div className="absolute top-20 sm:top-32 left-0 w-full py-2 sm:py-4 overflow-hidden">
             <div className="moving-partners-container">
               <div className="moving-partners-track">
                 <div className="moving-partners-logos">
@@ -121,16 +121,16 @@ export default function Home() {
           </div>
 
           {/* CTA Content centered with top margin for partners */}
-          <div className="flex-grow flex items-center justify-center pt-16">
+          <div className="flex-grow flex items-center justify-center pt-12 sm:pt-16 px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="reveal-text text-5xl md:text-7xl font-light leading-tight mb-12">
+              <h2 className="reveal-text text-4xl sm:text-5xl md:text-7xl font-light leading-tight mb-8 sm:mb-12">
                 The best SEO results
                 <br />
                 are built <span className="text-green-400">together</span>.
               </h2>
               <button
                 onClick={handleContactOpen}
-                className="border border-white text-white px-8 py-4 rounded-full text-lg hover:bg-white hover:text-gray-900 transition-colors transform hover:scale-105 transition-all duration-300"
+                className="border border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg hover:bg-white hover:text-gray-900 transition-colors transform hover:scale-105 transition-all duration-300"
               >
                 Scale Your Rankings →
               </button>
