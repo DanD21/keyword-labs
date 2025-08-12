@@ -38,14 +38,14 @@ const CircleSection: React.FC<CircleSectionProps> = ({
             </div>
           )}
           {circleConfig === "cluster" && (
-            <div className="relative w-48 h-32">
+            <div className="relative w-48 h-40">
               {/* Cluster formation - 6 circles */}
               <div className="develop-circle w-12 h-12 rounded-full bg-green-400 opacity-60 absolute top-0 left-16"></div>
-              <div className="develop-circle w-12 h-12 rounded-full bg-green-400 opacity-60 absolute top-8 left-4"></div>
-              <div className="develop-circle w-12 h-12 rounded-full bg-green-400 opacity-60 absolute top-8 left-28"></div>
-              <div className="develop-circle w-12 h-12 rounded-full bg-green-400 opacity-60 absolute bottom-8 left-0"></div>
-              <div className="develop-circle w-12 h-12 rounded-full bg-green-400 opacity-60 absolute bottom-8 left-16"></div>
-              <div className="develop-circle w-12 h-12 rounded-full bg-green-400 opacity-60 absolute bottom-8 left-32"></div>
+              <div className="develop-circle w-12 h-12 rounded-full bg-green-400 opacity-60 absolute top-12 left-8"></div>
+              <div className="develop-circle w-12 h-12 rounded-full bg-green-400 opacity-60 absolute top-12 left-24"></div>
+              <div className="develop-circle w-12 h-12 rounded-full bg-green-400 opacity-60 absolute top-24 left-0"></div>
+              <div className="develop-circle w-12 h-12 rounded-full bg-green-400 opacity-60 absolute top-24 left-16"></div>
+              <div className="develop-circle w-12 h-12 rounded-full bg-green-400 opacity-60 absolute top-24 left-32"></div>
             </div>
           )}
         </div>
