@@ -50,10 +50,10 @@ const CircleSection: React.FC<CircleSectionProps> = ({
           )}
         </div>
 
-        <h2 className="reveal-text text-4xl sm:text-5xl md:text-7xl font-light mb-6 sm:mb-8">
+        <h2 className="reveal-text text-5xl sm:text-5xl md:text-7xl font-light mb-6 sm:mb-8">
           {title}
         </h2>
-        <p className="reveal-text text-lg sm:text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
+        <p className="reveal-text text-xl sm:text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
           {description}
         </p>
       </div>

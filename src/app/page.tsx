@@ -39,12 +39,12 @@ export default function Home() {
       {/* Section 2: Value Proposition */}
       <Section className="value-section">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="reveal-text text-4xl sm:text-5xl md:text-7xl font-light leading-tight">
+          <h2 className="reveal-text text-5xl sm:text-5xl md:text-7xl font-light leading-tight">
             We put AI at the center
             <br />
             of <span className="text-green-400">SEO strategy</span>.
           </h2>
-          <p className="reveal-text text-xl sm:text-xl md:text-2xl mt-6 md:mt-8 text-gray-300">
+          <p className="reveal-text text-2xl sm:text-xl md:text-2xl mt-6 md:mt-8 text-gray-300">
             Your trusted partner in dominating search rankings with intelligent automation.
           </p>
         </div>
@@ -53,7 +53,7 @@ export default function Home() {
       {/* Section 3: Process Introduction */}
       <Section className="process-section">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="reveal-text text-4xl sm:text-5xl md:text-7xl font-light leading-tight">
+          <h2 className="reveal-text text-5xl sm:text-5xl md:text-7xl font-light leading-tight">
             We spend our days guiding companies
             <br className="hidden sm:block" />
             <span className="sm:hidden"> </span>through our 3-step{" "}
@@ -123,7 +123,7 @@ export default function Home() {
           {/* CTA Content centered with top margin for partners */}
           <div className="flex-grow flex items-center justify-center pt-12 sm:pt-16 px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="reveal-text text-4xl sm:text-5xl md:text-7xl font-light leading-tight mb-8 sm:mb-12">
+              <h2 className="reveal-text text-5xl sm:text-5xl md:text-7xl font-light leading-tight mb-8 sm:mb-12">
                 The best SEO results
                 <br />
                 are built <span className="text-green-400">together</span>.

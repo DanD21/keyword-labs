@@ -30,6 +30,19 @@
   scroll-snap-align: start;
 }
 
+/* Stronger scroll snap for mobile */
+@media (max-width: 768px) {
+  .scroll-container {
+    scroll-snap-type: y mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .section {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+  }
+}
+
 body {
   background: var(--bg-primary);
   color: var(--text-primary);
@@ -121,11 +134,6 @@ body {
 
 /* Mobile Responsive Styles */
 @media (max-width: 768px) {
-  /* Keep scroll snap but make it less strict for mobile */
-  .scroll-container {
-    scroll-snap-type: y proximity;
-  }
-  
   .section {
     @apply h-screen px-4 py-8;
   }

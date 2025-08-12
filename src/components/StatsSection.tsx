@@ -7,7 +7,7 @@ const StatsSection = () => {
   return (
     <Section className="stats-section">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="reveal-text text-3xl sm:text-4xl md:text-6xl font-light mb-8 sm:mb-12 md:mb-16">
+        <h2 className="reveal-text text-5xl sm:text-4xl md:text-6xl font-light mb-8 sm:mb-12 md:mb-16">
           We don't sell promises. We deliver{" "}
           <em className="text-green-400 not-italic">Rankings</em>.
         </h2>
@@ -23,12 +23,12 @@ const StatsSection = () => {
               </div>
               <div className="text-xl sm:text-2xl ml-2">%</div>
             </div>
-            <p className="reveal-text text-gray-300 mt-3 sm:mt-4 text-base sm:text-base">
+            <p className="reveal-text text-gray-300 mt-3 sm:mt-4 text-lg sm:text-base">
               Average organic traffic increase in first 6 months
             </p>
             <a
               href="#"
-              className="reveal-text text-green-400 mt-2 inline-block hover:underline text-base sm:text-base"
+              className="reveal-text text-green-400 mt-2 inline-block hover:underline text-lg sm:text-base"
             >
               See our case studies →
             </a>
@@ -44,7 +44,7 @@ const StatsSection = () => {
               </div>
               <div className="text-xl sm:text-2xl ml-2">+</div>
             </div>
-            <p className="reveal-text text-gray-300 mt-3 sm:mt-4 text-base sm:text-base">
+            <p className="reveal-text text-gray-300 mt-3 sm:mt-4 text-lg sm:text-base">
               Keywords ranked on first page of Google
             </p>
           </div>
@@ -59,7 +59,7 @@ const StatsSection = () => {
               </div>
               <div className="text-xl sm:text-2xl ml-2">%</div>
             </div>
-            <p className="reveal-text text-gray-300 mt-3 sm:mt-4 text-base sm:text-base">
+            <p className="reveal-text text-gray-300 mt-3 sm:mt-4 text-lg sm:text-base">
               Client retention rate with measurable ROI
             </p>
           </div>
