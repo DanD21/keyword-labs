@@ -86,31 +86,56 @@ export default function Home() {
       {/* Section 7: Stats */}
       <StatsSection />
 
-      {/* Section 8: Partner logos */}
-      <Section className="partners-section">
-        <div className="flex justify-center items-center space-x-12 opacity-60">
-          <div className="reveal-text text-gray-400">Citation</div>
-          <div className="reveal-text text-gray-400">ReadyRNs</div>
-          <div className="reveal-text text-gray-400">SHOPSOLAR</div>
-          <div className="reveal-text text-gray-400">Partner 4</div>
-          <div className="reveal-text text-gray-400">Partner 5</div>
-        </div>
-      </Section>
+      {/* Section 8: Partners + CTA Combined */}
+      <Section className="partners-cta-section">
+        <div className="h-full flex flex-col">
+          {/* Moving Partners positioned below navbar area */}
+          <div className="absolute top-32 left-0 w-full py-4 overflow-hidden">
+            <div className="moving-partners-container">
+              <div className="moving-partners-track">
+                <div className="moving-partners-logos">
+                  <span className="partner-logo">METAFORCE</span>
+                  <span className="partner-logo">RealEstateU</span>
+                  <span className="partner-logo">DENT</span>
+                  <span className="partner-logo">JÄGERMEISTER</span>
+                  <span className="partner-logo">Citation</span>
+                  <span className="partner-logo">ReadyRNs</span>
+                  <span className="partner-logo">SHOPSOLAR</span>
+                  <span className="partner-logo">DARKBOX</span>
+                  <span className="partner-logo">stackOS</span>
+                </div>
+                {/* Duplicate for seamless loop */}
+                <div className="moving-partners-logos">
+                  <span className="partner-logo">METAFORCE</span>
+                  <span className="partner-logo">RealEstateU</span>
+                  <span className="partner-logo">DENT</span>
+                  <span className="partner-logo">JÄGERMEISTER</span>
+                  <span className="partner-logo">Citation</span>
+                  <span className="partner-logo">ReadyRNs</span>
+                  <span className="partner-logo">SHOPSOLAR</span>
+                  <span className="partner-logo">DARKBOX</span>
+                  <span className="partner-logo">stackOS</span>
+                </div>
+              </div>
+            </div>
+          </div>
 
-      {/* Section 9: CTA */}
-      <Section className="cta-section">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="reveal-text text-5xl md:text-7xl font-light leading-tight mb-12">
-            The best SEO results
-            <br />
-            are built <span className="text-green-400">together</span>.
-          </h2>
-          <button
-            onClick={handleContactOpen}
-            className="border border-white text-white px-8 py-4 rounded-full text-lg hover:bg-white hover:text-gray-900 transition-colors"
-          >
-            Scale Your Rankings →
-          </button>
+          {/* CTA Content centered with top margin for partners */}
+          <div className="flex-grow flex items-center justify-center pt-16">
+            <div className="max-w-4xl mx-auto text-center">
+              <h2 className="reveal-text text-5xl md:text-7xl font-light leading-tight mb-12">
+                The best SEO results
+                <br />
+                are built <span className="text-green-400">together</span>.
+              </h2>
+              <button
+                onClick={handleContactOpen}
+                className="border border-white text-white px-8 py-4 rounded-full text-lg hover:bg-white hover:text-gray-900 transition-colors transform hover:scale-105 transition-all duration-300"
+              >
+                Scale Your Rankings →
+              </button>
+            </div>
+          </div>
         </div>
       </Section>
 
