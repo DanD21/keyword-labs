@@ -83,31 +83,31 @@ export const initializeSimpleAnimations = () => {
           const section = entry.target.closest('.section');
           
           // Handle different circle types
-          if (section?.classList.contains('identify-section')) {
-            // Animate identify circles (concentric)
-            const identifyCircles = section.querySelectorAll('.circle-animation, .circle-outer, .circle-inner');
-            identifyCircles.forEach((circle, index) => {
+          if (section?.classList.contains('analyze-section')) {
+            // Animate analyze circles (concentric)
+            const analyzeCircles = section.querySelectorAll('.circle-animation, .circle-outer, .circle-inner');
+            analyzeCircles.forEach((circle, index) => {
               setTimeout(() => {
                 circle.classList.add('animate');
               }, index * 200); // Stagger by 200ms
             });
-            console.log('Animating identify circles');
-          } else if (section?.classList.contains('educate-section')) {
-            // Animate educate circles (row of 5)
-            const educateCircles = section.querySelectorAll('.educate-circle');
-            educateCircles.forEach((circle, index) => {
+            console.log('Animating analyze circles');
+          } else if (section?.classList.contains('optimize-section')) {
+            // Animate optimize circles (row of 5)
+            const optimizeCircles = section.querySelectorAll('.educate-circle');
+            optimizeCircles.forEach((circle, index) => {
               (circle as HTMLElement).style.setProperty('--delay', index.toString());
               circle.classList.add('animate');
             });
-            console.log('Animating educate circles');
-          } else if (section?.classList.contains('develop-section')) {
-            // Animate develop circles (cluster of 6)
-            const developCircles = section.querySelectorAll('.develop-circle');
-            developCircles.forEach((circle, index) => {
+            console.log('Animating optimize circles');
+          } else if (section?.classList.contains('scale-section')) {
+            // Animate scale circles (cluster of 6)
+            const scaleCircles = section.querySelectorAll('.develop-circle');
+            scaleCircles.forEach((circle, index) => {
               (circle as HTMLElement).style.setProperty('--delay', index.toString());
               circle.classList.add('animate');
             });
-            console.log('Animating develop circles');
+            console.log('Animating scale circles');
           }
         } else {
           // Remove animations when leaving viewport
@@ -123,7 +123,7 @@ export const initializeSimpleAnimations = () => {
   );
 
   // Observe circle sections
-  const circleSections = document.querySelectorAll('.identify-section, .educate-section, .develop-section');
+  const circleSections = document.querySelectorAll('.analyze-section, .optimize-section, .scale-section');
   circleSections.forEach(section => {
     circleObserver.observe(section);
     console.log('Observing circle section:', section.className);

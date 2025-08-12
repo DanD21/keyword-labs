@@ -42,10 +42,10 @@ export default function Home() {
           <h2 className="reveal-text text-5xl md:text-7xl font-light leading-tight">
             We put AI at the center
             <br />
-            of <span className="text-green-400">everything</span> we do.
+            of <span className="text-green-400">SEO strategy</span>.
           </h2>
           <p className="reveal-text text-xl md:text-2xl mt-8 text-gray-300">
-            Your trusted partner in becoming an AI-first company.
+            Your trusted partner in dominating search rankings with intelligent automation.
           </p>
         </div>
       </Section>
@@ -57,29 +57,29 @@ export default function Home() {
             We spend our days guiding companies
             <br />
             through our 3-step{" "}
-            <span className="text-green-400">AI Transformation</span> Journey.
+            <span className="text-green-400">SEO AI</span> Journey.
           </h2>
         </div>
       </Section>
 
-      {/* Section 4: Identify */}
+      {/* Section 4: Analyze */}
       <CircleSection
-        title="Identify"
-        description="We help you identify high-impact AI opportunities and build a step-by-step AI Transformation strategy to bring them to life."
+        title="Analyze"
+        description="We analyze your current SEO performance and identify high-impact keyword opportunities using advanced AI-powered research tools and competitive analysis."
         circleConfig="concentric"
       />
 
-      {/* Section 5: Educate */}
+      {/* Section 5: Optimize */}
       <CircleSection
-        title="Educate"
-        description="We train and support your team with the right tools and know-how to embed AI across your entire organization."
+        title="Optimize"
+        description="We optimize your content, technical SEO, and user experience using AI-driven insights to maximize your search engine visibility and rankings."
         circleConfig="row"
       />
 
-      {/* Section 6: Develop */}
+      {/* Section 6: Scale */}
       <CircleSection
-        title="Develop"
-        description="We leverage our extensive experience and network to develop custom AI systems that are proven to move the needle inside your business."
+        title="Scale"
+        description="We scale your SEO success with automated content strategies, AI-powered link building, and continuous performance monitoring that grows with your business."
         circleConfig="cluster"
       />
 
@@ -101,15 +101,15 @@ export default function Home() {
       <Section className="cta-section">
         <div className="max-w-4xl mx-auto">
           <h2 className="reveal-text text-5xl md:text-7xl font-light leading-tight mb-12">
-            The best AI systems
+            The best SEO results
             <br />
-            are built <span className="text-green-400">side by side</span>.
+            are built <span className="text-green-400">together</span>.
           </h2>
           <button
             onClick={handleContactOpen}
             className="border border-white text-white px-8 py-4 rounded-full text-lg hover:bg-white hover:text-gray-900 transition-colors"
           >
-            Let's Partner Up →
+            Scale Your Rankings →
           </button>
         </div>
       </Section>

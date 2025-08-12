@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 interface ContactModalProps {
   isOpen: boolean;
@@ -8,21 +8,42 @@ interface ContactModalProps {
 }
 
 const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
+  const [isAnimating, setIsAnimating] = useState(false);
+
+  useEffect(() => {
+    if (isOpen) {
+      // Trigger animation after component mounts
+      setTimeout(() => setIsAnimating(true), 10);
+    } else {
+      setIsAnimating(false);
+    }
+  }, [isOpen]);
+
+  const handleClose = () => {
+    setIsAnimating(false);
+    // Wait for animation to complete before actually closing
+    setTimeout(() => onClose(), 300);
+  };
+
   if (!isOpen) return null;
 
   return (
     <div className="fixed inset-0 z-50">
       <div
-        className="absolute inset-0 bg-black bg-opacity-50"
-        onClick={onClose}
+        className={`absolute inset-0 bg-black transition-opacity duration-300 ${
+          isAnimating ? 'bg-opacity-50' : 'bg-opacity-0'
+        }`}
+        onClick={handleClose}
       ></div>
-      <div className="absolute right-0 top-0 h-full w-full max-w-2xl bg-gray-100 p-8 overflow-y-auto">
+      <div className={`absolute right-0 top-0 h-full w-full max-w-2xl bg-gray-100 p-8 overflow-y-auto transform transition-transform duration-300 ease-out ${
+        isAnimating ? 'translate-x-0' : 'translate-x-full'
+      }`}>
         <div className="flex justify-between items-center mb-8">
           <h3 className="text-2xl font-light text-gray-900">
-            Tell us where you're at
+            Let's scale your SEO
           </h3>
           <button
-            onClick={onClose}
+            onClick={handleClose}
             className="text-3xl text-gray-900 hover:text-gray-600"
           >
             ×
@@ -81,10 +102,12 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
 
           <select className="w-full p-3 border-b border-gray-300 bg-transparent focus:border-gray-900 outline-none transition-colors">
             <option>Select service</option>
-            <option>AI Strategy Consulting</option>
-            <option>AI Training & Education</option>
-            <option>Custom AI Development</option>
-            <option>AI Implementation Support</option>
+            <option>Complete SEO Audit & Strategy</option>
+            <option>AI-Powered Content Optimization</option>
+            <option>Technical SEO & Site Performance</option>
+            <option>Link Building & Authority Growth</option>
+            <option>Local SEO & Maps Optimization</option>
+            <option>Enterprise SEO Management</option>
             <option>Other</option>
           </select>
 

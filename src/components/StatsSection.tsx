@@ -8,8 +8,8 @@ const StatsSection = () => {
     <Section className="stats-section">
       <div className="max-w-6xl mx-auto">
         <h2 className="reveal-text text-4xl md:text-6xl font-light mb-16">
-          We don't sell AI. We sell{" "}
-          <em className="text-green-400 not-italic">Results</em>.
+          We don't sell promises. We deliver{" "}
+          <em className="text-green-400 not-italic">Rankings</em>.
         </h2>
 
         <div className="grid md:grid-cols-3 gap-16 text-center">
@@ -17,20 +17,20 @@ const StatsSection = () => {
             <div className="flex items-baseline justify-center">
               <div
                 className="text-6xl md:text-8xl font-light counter"
-                data-target="17"
+                data-target="500"
               >
                 0
               </div>
-              <div className="text-2xl ml-2">M+</div>
+              <div className="text-2xl ml-2">%</div>
             </div>
             <p className="reveal-text text-gray-300 mt-4">
-              Professionals upskilled in AI via our platforms
+              Average organic traffic increase in first 6 months
             </p>
             <a
               href="#"
               className="reveal-text text-green-400 mt-2 inline-block hover:underline"
             >
-              Watch our content here →
+              See our case studies →
             </a>
           </div>
 
@@ -38,14 +38,14 @@ const StatsSection = () => {
             <div className="flex items-baseline justify-center">
               <div
                 className="text-6xl md:text-8xl font-light counter"
-                data-target="435"
+                data-target="2500"
               >
                 0
               </div>
               <div className="text-2xl ml-2">+</div>
             </div>
             <p className="reveal-text text-gray-300 mt-4">
-              AI Opportunities identified for businesses
+              Keywords ranked on first page of Google
             </p>
           </div>
 
@@ -53,14 +53,14 @@ const StatsSection = () => {
             <div className="flex items-baseline justify-center">
               <div
                 className="text-6xl md:text-8xl font-light counter"
-                data-target="55"
+                data-target="95"
               >
                 0
               </div>
-              <div className="text-2xl ml-2">+</div>
+              <div className="text-2xl ml-2">%</div>
             </div>
             <p className="reveal-text text-gray-300 mt-4">
-              Bespoke AI solutions developed
+              Client retention rate with measurable ROI
             </p>
           </div>
         </div>
