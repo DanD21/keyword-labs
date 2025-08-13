@@ -38,14 +38,22 @@ const CircleSection: React.FC<CircleSectionProps> = ({
             </div>
           )}
           {circleConfig === "cluster" && (
-            <div className="relative w-32 h-28 sm:w-40 sm:h-32 md:w-48 md:h-40">
-              {/* Cluster formation - 6 circles - adjusted for mobile */}
-              <div className="develop-circle w-6 h-6 sm:w-8 sm:h-8 md:w-12 md:h-12 rounded-full bg-green-400 opacity-60 absolute top-0 left-1/2 transform -translate-x-1/2"></div>
-              <div className="develop-circle w-6 h-6 sm:w-8 sm:h-8 md:w-12 md:h-12 rounded-full bg-green-400 opacity-60 absolute top-6 sm:top-8 md:top-12 left-1/4"></div>
-              <div className="develop-circle w-6 h-6 sm:w-8 sm:h-8 md:w-12 md:h-12 rounded-full bg-green-400 opacity-60 absolute top-6 sm:top-8 md:top-12 right-1/4"></div>
-              <div className="develop-circle w-6 h-6 sm:w-8 sm:h-8 md:w-12 md:h-12 rounded-full bg-green-400 opacity-60 absolute bottom-0 left-0"></div>
-              <div className="develop-circle w-6 h-6 sm:w-8 sm:h-8 md:w-12 md:h-12 rounded-full bg-green-400 opacity-60 absolute bottom-0 left-1/2 transform -translate-x-1/2"></div>
-              <div className="develop-circle w-6 h-6 sm:w-8 sm:h-8 md:w-12 md:h-12 rounded-full bg-green-400 opacity-60 absolute bottom-0 right-0"></div>
+            <div className="flex flex-col items-center space-y-3">
+              {/* Row 1: Top circle */}
+              <div className="flex justify-center">
+                <div className="develop-circle w-12 h-12 rounded-full bg-green-400 opacity-60"></div>
+              </div>
+              {/* Row 2: Middle 2 circles */}
+              <div className="flex justify-center space-x-8">
+                <div className="develop-circle w-12 h-12 rounded-full bg-green-400 opacity-60"></div>
+                <div className="develop-circle w-12 h-12 rounded-full bg-green-400 opacity-60"></div>
+              </div>
+              {/* Row 3: Bottom 3 circles */}
+              <div className="flex justify-center space-x-8">
+                <div className="develop-circle w-12 h-12 rounded-full bg-green-400 opacity-60"></div>
+                <div className="develop-circle w-12 h-12 rounded-full bg-green-400 opacity-60"></div>
+                <div className="develop-circle w-12 h-12 rounded-full bg-green-400 opacity-60"></div>
+              </div>
             </div>
           )}
         </div>
