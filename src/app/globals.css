@@ -15,7 +15,7 @@
   --color-accent-green: var(--accent-green);
   --color-text-secondary: var(--text-secondary);
   --color-border-subtle: var(--border-subtle);
-  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-sans: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 /* Scroll-snap styles */
@@ -46,7 +46,12 @@
 body {
   background: var(--bg-primary);
   color: var(--text-primary);
-  font-family: var(--font-sans);
+  font-family: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Force Space Grotesk on all text elements */
+*, *::before, *::after {
+  font-family: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
 }
 
 /* Text reveal animation classes */

@@ -15,7 +15,7 @@ const Navigation: React.FC<NavigationProps> = ({ onContactClick }) => {
         </div>
         <button 
           onClick={onContactClick}
-          className="border border-white text-white px-4 sm:px-6 py-2 rounded-full text-sm sm:text-base hover:bg-white hover:text-gray-900 transition-colors"
+          className="border border-white text-white px-4 sm:px-6 py-2 rounded-full text-base sm:text-lg hover:bg-white hover:text-gray-900 transition-colors"
         >
           <span className="hidden sm:inline">Get In Touch</span>
           <span className="sm:hidden">Contact</span> →

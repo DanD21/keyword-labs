@@ -18,7 +18,7 @@ const HeroSection = () => {
           </div>
           <div className="reveal-text mt-2">Company</div>
         </div>
-        <p className="reveal-text text-2xl sm:text-xl md:text-2xl mt-6 md:mt-8 text-gray-300 px-2">
+        <p className="reveal-text text-3xl sm:text-3xl md:text-4xl mt-6 md:mt-8 text-green-400 font-normal px-2">
           We are an AI-powered SEO revolution.
         </p>
       </div>

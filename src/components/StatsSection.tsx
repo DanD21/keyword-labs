@@ -23,12 +23,12 @@ const StatsSection = () => {
               </div>
               <div className="text-xl sm:text-2xl ml-2">%</div>
             </div>
-            <p className="reveal-text text-gray-300 mt-3 sm:mt-4 text-lg sm:text-base">
+            <p className="reveal-text text-gray-300 mt-3 sm:mt-4 text-xl sm:text-lg">
               Average organic traffic increase in first 6 months
             </p>
             <a
               href="#"
-              className="reveal-text text-green-400 mt-2 inline-block hover:underline text-lg sm:text-base"
+              className="reveal-text text-green-400 mt-2 inline-block hover:underline text-xl sm:text-lg"
             >
               See our case studies →
             </a>
@@ -44,7 +44,7 @@ const StatsSection = () => {
               </div>
               <div className="text-xl sm:text-2xl ml-2">+</div>
             </div>
-            <p className="reveal-text text-gray-300 mt-3 sm:mt-4 text-lg sm:text-base">
+            <p className="reveal-text text-gray-300 mt-3 sm:mt-4 text-xl sm:text-lg">
               Keywords ranked on first page of Google
             </p>
           </div>
@@ -59,7 +59,7 @@ const StatsSection = () => {
               </div>
               <div className="text-xl sm:text-2xl ml-2">%</div>
             </div>
-            <p className="reveal-text text-gray-300 mt-3 sm:mt-4 text-lg sm:text-base">
+            <p className="reveal-text text-gray-300 mt-3 sm:mt-4 text-xl sm:text-lg">
               Client retention rate with measurable ROI
             </p>
           </div>
