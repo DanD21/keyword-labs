@@ -10,6 +10,7 @@ import ContactModal from "@/components/ContactModal";
 import SGeoMorph from "@/components/SGeoMorph";
 import WorkflowSection from "@/components/WorkflowSection";
 import GrowthSection from "@/components/GrowthSection";
+import AIToolsSection from "@/components/AIToolsSection";
 import { initializeSimpleAnimations } from "@/utils/simpleAnimations";
 
 export default function Home() {
@@ -82,6 +83,9 @@ export default function Home() {
 
       {/* Section 4.5: The Autonomous Content Engine */}
       <WorkflowSection />
+
+      {/* Section 4.6: AI Tools */}
+      <AIToolsSection />
 
       {/* Section 4.7: AI Strategy & Growth Partnership */}
       <GrowthSection />
