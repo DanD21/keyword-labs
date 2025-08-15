@@ -8,6 +8,8 @@ import CircleSection from "@/components/CircleSection";
 import StatsSection from "@/components/StatsSection";
 import ContactModal from "@/components/ContactModal";
 import SGeoMorph from "@/components/SGeoMorph";
+import WorkflowSection from "@/components/WorkflowSection";
+import GrowthSection from "@/components/GrowthSection";
 import { initializeSimpleAnimations } from "@/utils/simpleAnimations";
 
 export default function Home() {
@@ -64,7 +66,27 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* Section 4: Process Introduction */}
+      {/* Section 4: Solutions Built Not Bought */}
+      <Section className="solutions-section">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="reveal-text text-5xl sm:text-5xl md:text-7xl font-light leading-tight">
+            Our Solutions Are <span className="text-green-400">Built</span>,<br />
+            Not Bought
+          </h2>
+          <p className="reveal-text text-2xl sm:text-xl md:text-2xl mt-6 md:mt-8 text-green-400">
+            We deliver a full spectrum of solutions, from pre-built<br />
+            workflows to bespoke AI automation.
+          </p>
+        </div>
+      </Section>
+
+      {/* Section 4.5: The Autonomous Content Engine */}
+      <WorkflowSection />
+
+      {/* Section 4.7: AI Strategy & Growth Partnership */}
+      <GrowthSection />
+
+      {/* Section 5: Process Introduction */}
       <Section className="process-section">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="reveal-text text-5xl sm:text-5xl md:text-7xl font-light leading-tight">

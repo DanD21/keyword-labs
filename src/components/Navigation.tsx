@@ -15,9 +15,9 @@ const Navigation: React.FC<NavigationProps> = ({ onContactClick }) => {
           <Image 
             src="/keywordlabs-logo.png" 
             alt="Keyword Labs" 
-            width={40} 
-            height={40} 
-            className="w-8 h-8 sm:w-10 sm:h-10 mr-3"
+            width={50} 
+            height={50} 
+            className="w-8 h-8 sm:w-10 sm:h-10"
           />
           <span className="text-white font-bold text-lg sm:text-xl">keyword labs</span>
         </div>
