@@ -7,6 +7,7 @@ import HeroSection from "@/components/HeroSection";
 import CircleSection from "@/components/CircleSection";
 import StatsSection from "@/components/StatsSection";
 import ContactModal from "@/components/ContactModal";
+import SGeoMorph from "@/components/SGeoMorph";
 import { initializeSimpleAnimations } from "@/utils/simpleAnimations";
 
 export default function Home() {
@@ -37,7 +38,7 @@ export default function Home() {
       <HeroSection />
 
       {/* Section 2: Value Proposition */}
-      <Section className="value-section">
+      {/* <Section className="value-section">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="reveal-text text-5xl sm:text-5xl md:text-7xl font-light leading-tight">
             We put AI at the center
@@ -48,9 +49,22 @@ export default function Home() {
             Your trusted partner in dominating search rankings with intelligent automation.
           </p>
         </div>
+      </Section> */}
+
+      {/* Section 3: S/GEO Strategy */}
+      <Section className="sgeo-section">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="reveal-text text-5xl sm:text-5xl md:text-7xl font-light leading-tight">
+            <SGeoMorph />
+          </h2>
+          <p className="reveal-text text-2xl sm:text-xl md:text-2xl mt-6 md:mt-8 text-green-400">
+            That's not a question; it's the foundation<br />
+            of our collaboration.
+          </p>
+        </div>
       </Section>
 
-      {/* Section 3: Process Introduction */}
+      {/* Section 4: Process Introduction */}
       <Section className="process-section">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="reveal-text text-5xl sm:text-5xl md:text-7xl font-light leading-tight">
@@ -62,31 +76,31 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* Section 4: Analyze */}
+      {/* Section 5: Analyze */}
       <CircleSection
         title="Analyze"
         description="We analyze your current SEO performance and identify high-impact keyword opportunities using advanced AI-powered research tools and competitive analysis."
         circleConfig="concentric"
       />
 
-      {/* Section 5: Optimize */}
+      {/* Section 6: Optimize */}
       <CircleSection
         title="Optimize"
         description="We optimize your content, technical SEO, and user experience using AI-driven insights to maximize your search engine visibility and rankings."
         circleConfig="row"
       />
 
-      {/* Section 6: Scale */}
+      {/* Section 7: Scale */}
       <CircleSection
         title="Scale"
         description="We scale your SEO success with automated content strategies, AI-powered link building, and continuous performance monitoring that grows with your business."
         circleConfig="cluster"
       />
 
-      {/* Section 7: Stats */}
+      {/* Section 8: Stats */}
       <StatsSection />
 
-      {/* Section 8: Partners + CTA Combined */}
+      {/* Section 9: Partners + CTA Combined */}
       <Section className="partners-cta-section">
         <div className="h-full flex flex-col">
           {/* Moving Partners positioned below navbar area */}
