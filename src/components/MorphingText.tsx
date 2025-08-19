@@ -3,8 +3,8 @@
 import { useCallback, useEffect, useRef } from "react";
 import { cn } from "../lib/utils";
 
-const morphTime = 1.5;
-const cooldownTime = 0.5;
+const morphTime = 1.2;
+const cooldownTime = 1.5;
 
 const useMorphingText = (texts: string[]) => {
   const textIndexRef = useRef(0);
@@ -20,12 +20,16 @@ const useMorphingText = (texts: string[]) => {
       const [current1, current2] = [text1Ref.current, text2Ref.current];
       if (!current1 || !current2) return;
 
-      current2.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
-      current2.style.opacity = `${Math.pow(fraction, 0.4) * 100}%`;
+      // Ensure smoother transition with overlapping visibility
+      const blurAmount1 = Math.min(6 / (1 - fraction + 0.1) - 6, 100);
+      const blurAmount2 = Math.min(6 / (fraction + 0.1) - 6, 100);
+      
+      current2.style.filter = `blur(${blurAmount2}px)`;
+      current2.style.opacity = `${Math.pow(fraction, 0.3) * 100}%`;
 
       const invertedFraction = 1 - fraction;
-      current1.style.filter = `blur(${Math.min(8 / invertedFraction - 8, 100)}px)`;
-      current1.style.opacity = `${Math.pow(invertedFraction, 0.4) * 100}%`;
+      current1.style.filter = `blur(${blurAmount1}px)`;
+      current1.style.opacity = `${Math.pow(invertedFraction, 0.3) * 100}%`;
 
       current1.textContent = texts[textIndexRef.current % texts.length];
       current2.textContent = texts[(textIndexRef.current + 1) % texts.length];
@@ -55,9 +59,10 @@ const useMorphingText = (texts: string[]) => {
     morphRef.current = 0;
     const [current1, current2] = [text1Ref.current, text2Ref.current];
     if (current1 && current2) {
-      current2.style.filter = "none";
+      // Keep the current letter fully visible during cooldown
+      current2.style.filter = "blur(0px)";
       current2.style.opacity = "100%";
-      current1.style.filter = "none";
+      current1.style.filter = "blur(0px)";
       current1.style.opacity = "0%";
     }
   }, []);

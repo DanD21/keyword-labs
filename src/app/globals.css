@@ -4,25 +4,35 @@
   /* Primary Colors */
   --bg-primary: #1a1f1a;      /* Dark green/black background */
   --text-primary: #ffffff;     /* White text */
-  --accent-blue: #00d4ff;      /* 🎨 GLOBAL ACCENT COLOR - Change this to update all accent colors throughout the site */
+  --accent-blue: #00f0ff;      /* 🎨 GLOBAL ACCENT COLOR - Change this to update all accent colors throughout the site */
   --text-secondary: #9ca3af;   /* Gray for secondary text */
   --border-subtle: #374151;    /* Subtle borders */
 }
 
 /* 
-🎨 GLOBAL ACCENT COLOR SYSTEM
-=====================================
+🎨 GLOBAL ACCENT COLOR SYSTEM WITH STATIC NEON GLOW
+====================================================
 To change the accent color throughout the entire site:
 1. Update the --accent-blue value above (line 7)
 2. All components use .text-accent, .bg-accent, .border-accent classes
 3. No hardcoded colors - everything references the CSS custom property
+4. Static neon glow effects automatically adapt to the new color
 
-Examples:
+Static Glow Classes Available:
+- .text-accent - Standard neon glow (no animation)
+- .text-accent-light - Subtle glow (80% opacity)
+- .text-accent-subtle - Very light glow (perfect for morphing text)
+- .text-accent-intense - Extra bright neon glow
+- .bg-accent - Background with neon glow
+- .bg-accent-light - Subtle background glow
+- .border-accent - Border with neon glow
+
+Color Examples:
 - Neon Green: #39ff14
 - Electric Purple: #bf00ff  
 - Hot Pink: #ff1493
 - Neon Orange: #ff6600
-- Current: #00d4ff (bright neon blue)
+- Current: #00d4ff (bright neon blue with static glow)
 */
 
 @theme inline {
@@ -225,32 +235,65 @@ body {
   }
 }
 
-/* Global Accent Utility Classes */
+/* Static Neon Glow Effects - No Animation */
+
+/* Global Accent Utility Classes with Very Subtle Glow */
 .text-accent {
   color: var(--accent-blue);
+  text-shadow: 
+    0 0 1px var(--accent-blue),
+    0 0 2px var(--accent-blue);
 }
 
 .bg-accent {
   background-color: var(--accent-blue);
+  box-shadow: 
+    0 0 2px var(--accent-blue),
+    0 0 4px var(--accent-blue),
+    inset 0 0 2px rgba(255, 255, 255, 0.05);
 }
 
 .border-accent {
   border-color: var(--accent-blue);
+  box-shadow: 
+    0 0 1px var(--accent-blue),
+    0 0 2px var(--accent-blue);
 }
 
 .text-accent-light {
   color: var(--accent-blue);
   opacity: 0.8;
+  text-shadow: 
+    0 0 1px var(--accent-blue);
 }
 
 .bg-accent-light {
   background-color: var(--accent-blue);
   opacity: 0.6;
+  box-shadow: 
+    0 0 1px var(--accent-blue),
+    0 0 2px var(--accent-blue);
 }
 
 .border-accent-light {
   border-color: var(--accent-blue);
   opacity: 0.3;
+  box-shadow: 
+    0 0 1px var(--accent-blue);
+}
+
+/* Extra Glow Utility Classes */
+.text-accent-intense {
+  color: var(--accent-blue);
+  text-shadow: 
+    0 0 2px var(--accent-blue),
+    0 0 4px var(--accent-blue),
+    0 0 6px var(--accent-blue);
+}
+
+.text-accent-subtle {
+  color: var(--accent-blue);
+  /* No glow - just the bright color */
 }
 
 /* Immediate visibility for users with reduced motion preferences */
@@ -260,4 +303,6 @@ body {
     transform: translateY(0) scale(1) !important;
     animation: none !important;
   }
+  
+  /* No animations to disable - static glow only */
 }

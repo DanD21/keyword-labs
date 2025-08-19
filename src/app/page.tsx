@@ -82,7 +82,7 @@ export default function Home() {
       </Section>
 
       {/* Section 4.5: The Autonomous Content Engine */}
-      <WorkflowSection />
+      {/* <WorkflowSection /> */}
 
       {/* Section 4.6: AI Tools */}
       <AIToolsSection />
