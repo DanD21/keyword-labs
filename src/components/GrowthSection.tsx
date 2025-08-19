@@ -11,7 +11,7 @@ const GrowthSection: React.FC = () => {
         <h2 className="reveal-text text-5xl sm:text-5xl md:text-7xl font-light leading-tight mb-8 md:mb-12">
           AI Strategy & Growth
           <br />
-          <span className="text-green-400">Partnership</span>
+          <span className="text-accent">Partnership</span>
         </h2>
         
         <div className="reveal-text mb-8 md:mb-12">

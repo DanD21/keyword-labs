@@ -23,8 +23,8 @@ const CircleSection: React.FC<CircleSectionProps> = ({
         <div className="circle-container h-32 sm:h-48 md:h-64 flex items-center justify-center mb-6 sm:mb-8 md:mb-12">
           {circleConfig === "concentric" && (
             <div className="relative flex items-center justify-center">
-              <div className="circle-animation circle-outer w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full border-2 border-green-400 opacity-30"></div>
-              <div className="circle-animation circle-inner w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-full bg-green-400 opacity-60 absolute"></div>
+              <div className="circle-animation circle-outer w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full border-2 border-accent-light"></div>
+              <div className="circle-animation circle-inner w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-full bg-accent-light absolute"></div>
             </div>
           )}
           {circleConfig === "row" && (
@@ -32,7 +32,7 @@ const CircleSection: React.FC<CircleSectionProps> = ({
               {[...Array(5)].map((_, i) => (
                 <div
                   key={i}
-                  className="educate-circle w-8 h-8 sm:w-12 sm:h-12 md:w-16 md:h-16 rounded-full bg-green-400 opacity-60"
+                  className="educate-circle w-8 h-8 sm:w-12 sm:h-12 md:w-16 md:h-16 rounded-full bg-accent-light"
                 ></div>
               ))}
             </div>
@@ -41,18 +41,18 @@ const CircleSection: React.FC<CircleSectionProps> = ({
             <div className="flex flex-col items-center space-y-3">
               {/* Row 1: Top circle */}
               <div className="flex justify-center">
-                <div className="develop-circle w-12 h-12 rounded-full bg-green-400 opacity-60"></div>
+                <div className="develop-circle w-12 h-12 rounded-full bg-accent-light"></div>
               </div>
               {/* Row 2: Middle 2 circles */}
               <div className="flex justify-center space-x-8">
-                <div className="develop-circle w-12 h-12 rounded-full bg-green-400 opacity-60"></div>
-                <div className="develop-circle w-12 h-12 rounded-full bg-green-400 opacity-60"></div>
+                <div className="develop-circle w-12 h-12 rounded-full bg-accent-light"></div>
+                <div className="develop-circle w-12 h-12 rounded-full bg-accent-light"></div>
               </div>
               {/* Row 3: Bottom 3 circles */}
               <div className="flex justify-center space-x-8">
-                <div className="develop-circle w-12 h-12 rounded-full bg-green-400 opacity-60"></div>
-                <div className="develop-circle w-12 h-12 rounded-full bg-green-400 opacity-60"></div>
-                <div className="develop-circle w-12 h-12 rounded-full bg-green-400 opacity-60"></div>
+                <div className="develop-circle w-12 h-12 rounded-full bg-accent-light"></div>
+                <div className="develop-circle w-12 h-12 rounded-full bg-accent-light"></div>
+                <div className="develop-circle w-12 h-12 rounded-full bg-accent-light"></div>
               </div>
             </div>
           )}

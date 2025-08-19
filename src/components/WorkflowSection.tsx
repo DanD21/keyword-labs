@@ -12,7 +12,7 @@ const WorkflowSection: React.FC = () => {
           <h2 className="reveal-text text-5xl sm:text-5xl md:text-7xl font-light leading-tight">
             The Autonomous
             <br />
-            <span className="text-green-400">Content Engine</span>
+            <span className="text-accent">Content Engine</span>
           </h2>
           <p className="reveal-text text-2xl sm:text-xl md:text-2xl mt-6 md:mt-8 text-gray-300">
             Our ready-to-deploy AI workflow, designed to put your content

@@ -46,7 +46,7 @@ export default function Home() {
           <h2 className="reveal-text text-5xl sm:text-5xl md:text-7xl font-light leading-tight">
             We put AI at the center
             <br />
-            of <span className="text-green-400">SEO strategy</span>.
+            of <span className="text-accent">SEO strategy</span>.
           </h2>
           <p className="reveal-text text-2xl sm:text-xl md:text-2xl mt-6 md:mt-8 text-gray-300">
             Your trusted partner in dominating search rankings with intelligent automation.
@@ -60,7 +60,7 @@ export default function Home() {
           <h2 className="reveal-text text-5xl sm:text-5xl md:text-7xl font-light leading-tight">
             <SGeoMorph />
           </h2>
-          <p className="reveal-text text-2xl sm:text-xl md:text-2xl mt-6 md:mt-8 text-green-400">
+          <p className="reveal-text text-2xl sm:text-xl md:text-2xl mt-6 md:mt-8 text-accent">
             That's not a question; it's the foundation<br />
             of our collaboration.
           </p>
@@ -71,10 +71,10 @@ export default function Home() {
       <Section className="solutions-section">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="reveal-text text-5xl sm:text-5xl md:text-7xl font-light leading-tight">
-            Our Solutions Are <span className="text-green-400">Built</span>,<br />
+            Our Solutions Are <span className="text-accent">Built</span>,<br />
             Not Bought
           </h2>
-          <p className="reveal-text text-2xl sm:text-xl md:text-2xl mt-6 md:mt-8 text-green-400">
+          <p className="reveal-text text-2xl sm:text-xl md:text-2xl mt-6 md:mt-8 text-accent">
             We deliver a full spectrum of solutions, from pre-built<br />
             workflows to bespoke AI automation.
           </p>
@@ -97,7 +97,7 @@ export default function Home() {
             We spend our days guiding companies
             <br className="hidden sm:block" />
             <span className="sm:hidden"> </span>through our 3-step{" "}
-            <span className="text-green-400">SEO AI</span> Journey.
+            <span className="text-accent">SEO AI</span> Journey.
           </h2>
         </div>
       </Section>
@@ -166,7 +166,7 @@ export default function Home() {
               <h2 className="reveal-text text-5xl sm:text-5xl md:text-7xl font-light leading-tight mb-8 sm:mb-12">
                 The best SEO results
                 <br />
-                are built <span className="text-green-400">together</span>.
+                are built <span className="text-accent">together</span>.
               </h2>
               <button
                 onClick={handleContactOpen}

@@ -14,7 +14,7 @@ const AIToolsSection: React.FC = () => {
             Rank Across Top AI Tools
           </h2>
           
-          <p className="reveal-text text-2xl sm:text-xl md:text-2xl text-green-400 max-w-4xl mx-auto mb-8 md:mb-12">
+          <p className="reveal-text text-2xl sm:text-xl md:text-2xl text-accent max-w-4xl mx-auto mb-8 md:mb-12">
             Optimize your content for ChatGPT, Perplexity, and Gemini to
             <br />
             boost visibility and performance where it matters most.

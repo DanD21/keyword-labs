@@ -19,7 +19,7 @@ const SGeoMorph: React.FC<{ className?: string }> = ({ className }) => {
       >
         <MorphingText
           texts={["S", "G"]}
-          className="text-green-400 !h-auto !text-5xl sm:!text-5xl md:!text-7xl !font-light !leading-tight !max-w-none !mx-0 !w-auto"
+          className="text-accent !h-auto !text-5xl sm:!text-5xl md:!text-7xl !font-light !leading-tight !max-w-none !mx-0 !w-auto"
         />
       </span>
       EO{" "}strategy?

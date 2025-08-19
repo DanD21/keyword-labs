@@ -9,7 +9,7 @@ const StatsSection = () => {
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="reveal-text text-5xl sm:text-4xl md:text-6xl font-light mb-8 sm:mb-12 md:mb-16">
           We don't sell promises. We deliver{" "}
-          <em className="text-green-400 not-italic">Rankings</em>.
+          <em className="text-accent not-italic">Rankings</em>.
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-12 md:gap-16 text-center">
@@ -28,7 +28,7 @@ const StatsSection = () => {
             </p>
             <a
               href="#"
-              className="reveal-text text-green-400 mt-2 inline-block hover:underline text-xl sm:text-lg"
+              className="reveal-text text-accent mt-2 inline-block hover:underline text-xl sm:text-lg"
             >
               See our case studies →
             </a>

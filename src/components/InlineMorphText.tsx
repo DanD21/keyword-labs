@@ -98,7 +98,7 @@ const InlineMorphText: React.FC<InlineMorphTextProps> = ({ texts, className }) =
   return (
     <span
       className={cn(
-        "relative inline-block text-green-400 font-light",
+        "relative inline-block text-accent font-light",
         className,
       )}
       style={{ 

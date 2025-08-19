@@ -4,17 +4,35 @@
   /* Primary Colors */
   --bg-primary: #1a1f1a;      /* Dark green/black background */
   --text-primary: #ffffff;     /* White text */
-  --accent-green: #4ade80;     /* Green accent for highlighted words */
+  --accent-blue: #00d4ff;      /* 🎨 GLOBAL ACCENT COLOR - Change this to update all accent colors throughout the site */
   --text-secondary: #9ca3af;   /* Gray for secondary text */
   --border-subtle: #374151;    /* Subtle borders */
 }
 
+/* 
+🎨 GLOBAL ACCENT COLOR SYSTEM
+=====================================
+To change the accent color throughout the entire site:
+1. Update the --accent-blue value above (line 7)
+2. All components use .text-accent, .bg-accent, .border-accent classes
+3. No hardcoded colors - everything references the CSS custom property
+
+Examples:
+- Neon Green: #39ff14
+- Electric Purple: #bf00ff  
+- Hot Pink: #ff1493
+- Neon Orange: #ff6600
+- Current: #00d4ff (bright neon blue)
+*/
+
 @theme inline {
   --color-bg-primary: var(--bg-primary);
   --color-text-primary: var(--text-primary);
-  --color-accent-green: var(--accent-green);
+  --color-accent-blue: var(--accent-blue);
   --color-text-secondary: var(--text-secondary);
   --color-border-subtle: var(--border-subtle);
+  --color-blue-400: #00d4ff;
+  --color-blue-500: #00c4ef;
   --font-sans: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
@@ -205,6 +223,34 @@ body {
   .moving-partners-track {
     animation-duration: 12s;
   }
+}
+
+/* Global Accent Utility Classes */
+.text-accent {
+  color: var(--accent-blue);
+}
+
+.bg-accent {
+  background-color: var(--accent-blue);
+}
+
+.border-accent {
+  border-color: var(--accent-blue);
+}
+
+.text-accent-light {
+  color: var(--accent-blue);
+  opacity: 0.8;
+}
+
+.bg-accent-light {
+  background-color: var(--accent-blue);
+  opacity: 0.6;
+}
+
+.border-accent-light {
+  border-color: var(--accent-blue);
+  opacity: 0.3;
 }
 
 /* Immediate visibility for users with reduced motion preferences */

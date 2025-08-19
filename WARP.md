@@ -65,7 +65,13 @@ The project uses a **dual animation approach**:
 - **CSS Custom Properties** for consistent theming:
   - `--bg-primary` (#1a1f1a) - Dark green/black background
   - `--text-primary` (#ffffff) - White text
-  - `--accent-green` (#4ade80) - Green accents
+  - `--accent-blue` (#00d4ff) - Bright neon blue accents
+- **Global Accent System**: Change accent color easily by updating `--accent-blue` in `globals.css`
+- **Accent Utility Classes**:
+  - `.text-accent` - Accent color text
+  - `.bg-accent` - Accent color background
+  - `.border-accent` - Accent color border
+  - `.text-accent-light`, `.bg-accent-light`, `.border-accent-light` - Accent with opacity
 - **Space Grotesk** font enforced globally via CSS font-family declarations
 
 ### Responsive Design
