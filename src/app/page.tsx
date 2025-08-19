@@ -8,7 +8,6 @@ import CircleSection from "@/components/CircleSection";
 import StatsSection from "@/components/StatsSection";
 import ContactModal from "@/components/ContactModal";
 import SGeoMorph from "@/components/SGeoMorph";
-import WorkflowSection from "@/components/WorkflowSection";
 import GrowthSection from "@/components/GrowthSection";
 import AIToolsSection from "@/components/AIToolsSection";
 import { initializeSimpleAnimations } from "@/utils/simpleAnimations";
@@ -61,7 +60,7 @@ export default function Home() {
             <SGeoMorph />
           </h2>
           <p className="reveal-text text-2xl sm:text-xl md:text-2xl mt-6 md:mt-8 text-accent">
-            That's not a question; it's the foundation<br />
+            That&apos;s not a question; it&apos;s the foundation<br />
             of our collaboration.
           </p>
         </div>

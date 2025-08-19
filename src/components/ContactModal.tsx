@@ -40,7 +40,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
       }`}>
         <div className="flex justify-between items-center mb-6 sm:mb-8">
           <h3 className="text-xl sm:text-2xl font-light text-gray-900">
-            Let's scale your SEO
+            Let&apos;s scale your SEO
           </h3>
           <button
             onClick={handleClose}

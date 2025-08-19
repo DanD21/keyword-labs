@@ -9,7 +9,7 @@ const HeroSection = () => {
     <Section className="hero-section">
       <div className="max-w-4xl mx-auto text-center px-4">
         <div className="text-5xl sm:text-5xl md:text-6xl lg:text-8xl font-light leading-tight">
-          <div className="reveal-text mb-2">We are not just an SEO</div>
+          <div className="reveal-text mb-2">We are not a SEO</div>
           <div className="reveal-text relative inline-block w-full" style={{ height: 'clamp(60px, 8vw, 80px)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             <MorphingText
               texts={["Agency", "Consultant", "Service"]}
@@ -19,7 +19,7 @@ const HeroSection = () => {
           <div className="reveal-text mt-2">Company</div>
         </div>
         <p className="reveal-text text-3xl sm:text-3xl md:text-4xl mt-6 md:mt-8 text-accent font-normal px-2">
-          We are an AI-powered SEO revolution.
+          We are an AI-powered GEO revolution.
         </p>
       </div>
     </Section>

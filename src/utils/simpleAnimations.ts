@@ -75,7 +75,6 @@ export const initializeSimpleAnimations = () => {
   });
 
   // Animate circles
-  const circles = document.querySelectorAll('.circle-animation, .circle-outer, .circle-inner, .educate-circle, .develop-circle');
   const circleObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {

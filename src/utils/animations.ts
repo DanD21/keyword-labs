@@ -175,21 +175,22 @@ export const setupSectionAnimations = () => {
   gsap.set(".educate-circle", { scale: 0, opacity: 0 });
   gsap.set(".develop-circle", { scale: 0, opacity: 0 });
 
-  sections.forEach((section: any, index: number) => {
-    console.log(`Section ${index}:`, section.className);
+  sections.forEach((section, index: number) => {
+    const sectionElement = section as Element;
+    console.log(`Section ${index}:`, sectionElement.className);
     
     // Immediately reveal text for the first section (hero)
     if (index === 0) {
-      const revealElements = section.querySelectorAll(".reveal-text");
+      const revealElements = sectionElement.querySelectorAll(".reveal-text");
       console.log('Hero reveal elements:', revealElements.length);
       if (revealElements.length > 0) {
         revealText(Array.from(revealElements), 0.3);
       }
     } else {
       // Only handle circle animations for specific sections
-      if (section.classList.contains("identify-section")) {
+      if (sectionElement.classList.contains("identify-section")) {
         ScrollTrigger.create({
-          trigger: section,
+          trigger: sectionElement,
           start: "top 85%",
           onEnter: () => {
             console.log('Playing identify circles');
@@ -198,9 +199,9 @@ export const setupSectionAnimations = () => {
           once: true,
         });
       }
-      if (section.classList.contains("educate-section")) {
+      if (sectionElement.classList.contains("educate-section")) {
         ScrollTrigger.create({
-          trigger: section,
+          trigger: sectionElement,
           start: "top 85%",
           onEnter: () => {
             console.log('Playing educate circles');
@@ -209,9 +210,9 @@ export const setupSectionAnimations = () => {
           once: true,
         });
       }
-      if (section.classList.contains("develop-section")) {
+      if (sectionElement.classList.contains("develop-section")) {
         ScrollTrigger.create({
-          trigger: section,
+          trigger: sectionElement,
           start: "top 85%",
           onEnter: () => {
             console.log('Playing develop circles');

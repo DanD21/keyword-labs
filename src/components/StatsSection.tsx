@@ -8,7 +8,7 @@ const StatsSection = () => {
     <Section className="stats-section">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="reveal-text text-5xl sm:text-4xl md:text-6xl font-light mb-8 sm:mb-12 md:mb-16">
-          We don't sell promises. We deliver{" "}
+          We don&apos;t sell promises. We deliver{" "}
           <em className="text-accent not-italic">Rankings</em>.
         </h2>
 
