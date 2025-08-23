@@ -159,10 +159,10 @@ Our process is called <span className="text-accent">Generative Engine Optimizati
       <StatsSection />
 
    {/* Section 4.6: AI Tools */}
-      <AIToolsSection />
+      {/* <AIToolsSection /> */}
 
       {/* Section 4.7: AI Strategy & Growth Partnership */}
-      <GrowthSection />
+      {/* <GrowthSection /> */}
       
       {/* Section 9: Partners + CTA Combined */}
       <Section className="partners-cta-section">
@@ -175,12 +175,6 @@ Our process is called <span className="text-accent">Generative Engine Optimizati
                   <a href="https://easyoutsource.com" target="_blank" rel="noopener noreferrer">
                     <img src="/easyOutsource-logo.png" alt="Easy Outsource" className="partner-logo-img h-6 opacity-100 hover:opacity-120 hover:brightness-110 transition-all" />
                   </a>
-                  <a href="https://kglilly.com" target="_blank" rel="noopener noreferrer">
-                    <img src="/kgilly-logo.png" alt="KG Lilly" className="partner-logo-img h-8 opacity-100 hover:opacity-120 hover:brightness-110 transition-all" />
-                  </a>
-                  <a href="https://elitedigitalagency.com" target="_blank" rel="noopener noreferrer">
-                    <img src="/elite-digital-logo.png" alt="Elite Digital Agency" className="partner-logo-img h-10 opacity-100 hover:opacity-120 hover:brightness-110 transition-all" />
-                  </a>
                   <a href="https://dotteam.com" target="_blank" rel="noopener noreferrer">
                     <img src="/dot-logo.png" alt="DOT Team" className="partner-logo-img h-14 opacity-100 hover:opacity-120 hover:brightness-110 transition-all" />
                   </a>
@@ -190,14 +184,11 @@ Our process is called <span className="text-accent">Generative Engine Optimizati
                   <a href="https://www.baystreetstaffing.com/" target="_blank" rel="noopener noreferrer">
                     <img src="/bay-street-logo.png" alt="Bay Street Staffing" className="partner-logo-img h-12 opacity-100 hover:opacity-120 hover:brightness-110 transition-all" />
                   </a>
-                  <a href="https://www.mastertech.work/" target="_blank" rel="noopener noreferrer">
-                    <img src="/mastertech-logo.png" alt="MasterTech" className="partner-logo-img h-8 opacity-100 hover:opacity-120 hover:brightness-110 transition-all" />
-                  </a>
                   <a href="https://catalina-ai.com/" target="_blank" rel="noopener noreferrer">
                     <img src="/catalina-ai-logo.png" alt="Catalina AI" className="partner-logo-img h-24 opacity-100 hover:opacity-120 hover:brightness-110 transition-all" />
                   </a>
                   <a href="https://a1mktg.com" target="_blank" rel="noopener noreferrer">
-                    <span className="partner-logo text-3xl font-bold opacity-100 hover:opacity-120 hover:brightness-110 transition-all">A1 MKTG</span>
+                    <span className="partner-logo text-6xl font-bold opacity-100 hover:opacity-120 hover:brightness-110 transition-all">A1 MKTG</span>
                   </a>
                 </div>
                 {/* Duplicate for seamless loop */}
@@ -205,12 +196,6 @@ Our process is called <span className="text-accent">Generative Engine Optimizati
                   <a href="https://easyoutsource.com" target="_blank" rel="noopener noreferrer">
                     <img src="/easyOutsource-logo.png" alt="Easy Outsource" className="partner-logo-img h-6 opacity-100 hover:opacity-120 hover:brightness-110 transition-all" />
                   </a>
-                  <a href="https://kglilly.com" target="_blank" rel="noopener noreferrer">
-                    <img src="/kgilly-logo.png" alt="KG Lilly" className="partner-logo-img h-8 opacity-100 hover:opacity-120 hover:brightness-110 transition-all" />
-                  </a>
-                  <a href="https://elitedigitalagency.com" target="_blank" rel="noopener noreferrer">
-                    <img src="/elite-digital-logo.png" alt="Elite Digital Agency" className="partner-logo-img h-10 opacity-100 hover:opacity-120 hover:brightness-110 transition-all" />
-                  </a>
                   <a href="https://dotteam.com" target="_blank" rel="noopener noreferrer">
                     <img src="/dot-logo.png" alt="DOT Team" className="partner-logo-img h-14 opacity-100 hover:opacity-120 hover:brightness-110 transition-all" />
                   </a>
@@ -220,14 +205,11 @@ Our process is called <span className="text-accent">Generative Engine Optimizati
                   <a href="https://www.baystreetstaffing.com/" target="_blank" rel="noopener noreferrer">
                     <img src="/bay-street-logo.png" alt="Bay Street Staffing" className="partner-logo-img h-12 opacity-100 hover:opacity-120 hover:brightness-110 transition-all" />
                   </a>
-                  <a href="https://www.mastertech.work/" target="_blank" rel="noopener noreferrer">
-                    <img src="/mastertech-logo.png" alt="MasterTech" className="partner-logo-img h-8 opacity-100 hover:opacity-120 hover:brightness-110 transition-all" />
-                  </a>
                   <a href="https://catalina-ai.com/" target="_blank" rel="noopener noreferrer">
                     <img src="/catalina-ai-logo.png" alt="Catalina AI" className="partner-logo-img h-24 opacity-100 hover:opacity-120 hover:brightness-110 transition-all" />
                   </a>
                   <a href="https://a1mktg.com" target="_blank" rel="noopener noreferrer">
-                    <span className="partner-logo text-3xl font-bold opacity-100 hover:opacity-120 hover:brightness-110 transition-all">A1 MKTG</span>
+                    <span className="partner-logo text-6xl font-bold opacity-100 hover:opacity-120 hover:brightness-110 transition-all">A1 MKTG</span>
                   </a>
                 </div>
               </div>
