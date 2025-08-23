@@ -72,7 +72,6 @@ Color Examples:
 }
 
 body {
-  background: var(--bg-primary);
   color: var(--text-primary);
   font-family: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
 }
@@ -148,6 +147,18 @@ body {
 
 .partner-logo:hover {
   opacity: 0.8;
+  transform: scale(1.05);
+}
+
+/* Partner logo images */
+.partner-logo-img {
+  filter: brightness(0.7) contrast(1.1);
+  transition: all 0.3s ease;
+  margin: 0 1rem;
+}
+
+.partner-logo-img:hover {
+  filter: brightness(1) contrast(1);
   transform: scale(1.05);
 }
 
@@ -296,6 +307,49 @@ body {
   /* No glow - just the bright color */
 }
 
+/* Floating AI Logo Animations */
+.ai-logo-float {
+  animation: floatUp 4s ease-in-out infinite;
+}
+
+.ai-logo-float-delayed {
+  animation: floatDown 5s ease-in-out infinite;
+  animation-delay: -1s;
+}
+
+.ai-logo-float-slow {
+  animation: floatUp 6s ease-in-out infinite;
+  animation-delay: -2s;
+}
+
+.ai-logo-float-reverse {
+  animation: floatDown 4.5s ease-in-out infinite;
+  animation-delay: -0.5s;
+}
+
+.ai-logo-float-center {
+  animation: floatUp 3.5s ease-in-out infinite;
+  animation-delay: -1.5s;
+}
+
+@keyframes floatUp {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes floatDown {
+  0%, 100% {
+    transform: translateY(-6px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+}
+
 /* Immediate visibility for users with reduced motion preferences */
 @media (prefers-reduced-motion: reduce) {
   .reveal-text, .circle-animation, .circle-outer, .circle-inner, .educate-circle, .develop-circle {
@@ -304,5 +358,8 @@ body {
     animation: none !important;
   }
   
-  /* No animations to disable - static glow only */
+  /* Disable floating animations for users with reduced motion preferences */
+  .ai-logo-float, .ai-logo-float-delayed, .ai-logo-float-slow, .ai-logo-float-reverse, .ai-logo-float-center {
+    animation: none !important;
+  }
 }

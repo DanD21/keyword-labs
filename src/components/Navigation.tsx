@@ -12,13 +12,6 @@ const Navigation: React.FC<NavigationProps> = ({ onContactClick }) => {
     <nav className="fixed top-0 left-0 right-0 z-50 p-4 sm:p-6">
       <div className="flex justify-between items-center">
         <div className="flex items-center">
-          <Image 
-            src="/keywordlabs-logo.png" 
-            alt="Keyword Labs" 
-            width={50} 
-            height={50} 
-            className="w-8 h-8 sm:w-10 sm:h-10"
-          />
           <span className="text-white font-bold text-lg sm:text-xl">keyword labs</span>
         </div>
         <button 

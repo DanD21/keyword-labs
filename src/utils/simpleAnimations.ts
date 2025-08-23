@@ -53,9 +53,9 @@ export const initializeSimpleAnimations = () => {
           const counter = entry.target as HTMLElement;
           const target = parseInt(counter.getAttribute('data-target') || '0');
           
-          // Simple counter animation
+          // Simple counter animation - faster
           let current = 0;
-          const increment = target / 50; // 50 steps
+          const increment = target / 30; // 30 steps (reduced from 50)
           const timer = setInterval(() => {
             current += increment;
             if (current >= target) {
@@ -63,7 +63,7 @@ export const initializeSimpleAnimations = () => {
               clearInterval(timer);
             }
             counter.textContent = Math.floor(current).toString();
-          }, 40); // Update every 40ms
+          }, 25); // Update every 25ms (reduced from 40ms)
         }
       });
     },

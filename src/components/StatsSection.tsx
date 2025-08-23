@@ -2,29 +2,51 @@
 
 import React from "react";
 import Section from "./Section";
+import { AnimatedText } from "./ui/animated-shiny-text";
 
 const StatsSection = () => {
   return (
     <Section className="stats-section">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="reveal-text text-5xl sm:text-4xl md:text-6xl font-light mb-8 sm:mb-12 md:mb-16">
-          We don&apos;t sell promises. We deliver{" "}
-          <em className="text-accent not-italic">Rankings</em>.
-        </h2>
+        <div className="mb-8 sm:mb-12 md:mb-16">
+          <div className="flex justify-center items-center gap-2 flex-wrap">
+            <AnimatedText 
+              text="We don't sell promises. We deliver" 
+              textClassName="text-5xl sm:text-4xl md:text-6xl font-light leading-tight reveal-text whitespace-nowrap"
+              gradientColors="linear-gradient(90deg, #888888 45%, #ffffff 50%, #888888 55%)"
+              gradientAnimationDuration={6}
+              className="inline-block"
+            />
+            <AnimatedText 
+              text="Rankings" 
+              textClassName="text-5xl sm:text-4xl md:text-6xl font-light leading-tight reveal-text whitespace-nowrap"
+              gradientColors="linear-gradient(90deg, #00f0ff 45%, #ffffff 50%, #00f0ff 55%)"
+              gradientAnimationDuration={6}
+              className="inline-block"
+            />
+            <AnimatedText 
+              text="." 
+              textClassName="text-5xl sm:text-4xl md:text-6xl font-light leading-tight reveal-text whitespace-nowrap"
+              gradientColors="linear-gradient(90deg, #888888 45%, #ffffff 50%, #888888 55%)"
+              gradientAnimationDuration={6}
+              className="inline-block"
+            />
+          </div>
+        </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-12 md:gap-16 text-center">
           <div>
             <div className="flex items-baseline justify-center">
               <div
                 className="text-4xl sm:text-6xl md:text-8xl font-light counter"
-                data-target="500"
+                data-target="350"
               >
                 0
               </div>
               <div className="text-xl sm:text-2xl ml-2">%</div>
             </div>
             <p className="reveal-text text-gray-300 mt-3 sm:mt-4 text-xl sm:text-lg">
-              Average organic traffic increase in first 6 months
+              Increase in On-Site Engagement Post-GEO
             </p>
             <a
               href="#"
@@ -38,14 +60,14 @@ const StatsSection = () => {
             <div className="flex items-baseline justify-center">
               <div
                 className="text-4xl sm:text-6xl md:text-8xl font-light counter"
-                data-target="2500"
+                data-target="70"
               >
                 0
               </div>
-              <div className="text-xl sm:text-2xl ml-2">+</div>
+              <div className="text-xl sm:text-2xl ml-2">%</div>
             </div>
             <p className="reveal-text text-gray-300 mt-3 sm:mt-4 text-xl sm:text-lg">
-              Keywords ranked on first page of Google
+              Higher Conversion Rates from AI-driven Traffic
             </p>
           </div>
 
@@ -53,14 +75,14 @@ const StatsSection = () => {
             <div className="flex items-baseline justify-center">
               <div
                 className="text-4xl sm:text-6xl md:text-8xl font-light counter"
-                data-target="95"
+                data-target="90"
               >
                 0
               </div>
-              <div className="text-xl sm:text-2xl ml-2">%</div>
+              <div className="text-xl sm:text-2xl ml-2">Days</div>
             </div>
             <p className="reveal-text text-gray-300 mt-3 sm:mt-4 text-xl sm:text-lg">
-              Client retention rate with measurable ROI
+              Average Time to Break Even on GEO Investment
             </p>
           </div>
         </div>

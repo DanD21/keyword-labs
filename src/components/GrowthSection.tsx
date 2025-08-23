@@ -3,16 +3,28 @@
 import React from "react";
 import Image from "next/image";
 import Section from "./Section";
+import { AnimatedText } from "./ui/animated-shiny-text";
 
 const GrowthSection: React.FC = () => {
   return (
     <Section className="growth-section">
       <div className="max-w-4xl mx-auto px-4 text-center">
-        <h2 className="reveal-text text-5xl sm:text-5xl md:text-7xl font-light leading-tight mb-8 md:mb-12">
-          AI Strategy & Growth
-          <br />
-          <span className="text-accent">Partnership</span>
-        </h2>
+        <div className="mb-8 md:mb-12">
+          <AnimatedText 
+            text="AI Strategy & Growth" 
+            textClassName="text-5xl sm:text-5xl md:text-7xl font-light leading-tight reveal-text whitespace-nowrap"
+            gradientColors="linear-gradient(90deg, #888888 45%, #ffffff 50%, #888888 55%)"
+            gradientAnimationDuration={6}
+            className="block"
+          />
+          <AnimatedText 
+            text="Partnership" 
+            textClassName="text-5xl sm:text-5xl md:text-7xl font-light leading-tight reveal-text whitespace-nowrap"
+            gradientColors="linear-gradient(90deg, #00f0ff 45%, #ffffff 50%, #00f0ff 55%)"
+            gradientAnimationDuration={6}
+            className="block"
+          />
+        </div>
         
         <div className="reveal-text mb-8 md:mb-12">
           <Image

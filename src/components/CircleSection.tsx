@@ -2,6 +2,7 @@
 
 import React from "react";
 import Section from "./Section";
+import { AnimatedText } from "./ui/animated-shiny-text";
 
 interface CircleSectionProps {
   title: string;
@@ -16,8 +17,22 @@ const CircleSection: React.FC<CircleSectionProps> = ({
   circleConfig,
   className = "",
 }) => {
+  // Map circle configs to fixed section class names for animations
+  const getSectionClassName = () => {
+    switch (circleConfig) {
+      case "concentric":
+        return "analyze-section";
+      case "row":
+        return "optimize-section";
+      case "cluster":
+        return "scale-section";
+      default:
+        return "analyze-section";
+    }
+  };
+
   return (
-    <Section className={`${title.toLowerCase()}-section ${className}`}>
+    <Section className={`${getSectionClassName()} ${className}`}>
       <div className="max-w-4xl mx-auto px-4">
         {/* Circle Animation Container */}
         <div className="circle-container h-32 sm:h-48 md:h-64 flex items-center justify-center mb-6 sm:mb-8 md:mb-12">
@@ -58,9 +73,13 @@ const CircleSection: React.FC<CircleSectionProps> = ({
           )}
         </div>
 
-        <h2 className="reveal-text text-5xl sm:text-5xl md:text-7xl font-light mb-6 sm:mb-8">
-          {title}
-        </h2>
+        <AnimatedText 
+          text={title} 
+          textClassName="text-5xl sm:text-5xl md:text-7xl font-light leading-tight reveal-text whitespace-nowrap"
+          gradientColors="linear-gradient(90deg, #888888 45%, #ffffff 50%, #888888 55%)"
+          gradientAnimationDuration={6}
+          className="mb-6 sm:mb-8"
+        />
         <p className="reveal-text text-2xl sm:text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto">
           {description}
         </p>
