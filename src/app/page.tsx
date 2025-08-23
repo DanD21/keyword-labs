@@ -3,11 +3,9 @@
 import React, { useEffect, useState } from "react";
 import Navigation from "@/components/Navigation";
 import Section from "@/components/Section";
-import HeroSection from "@/components/HeroSection";
 import CircleSection from "@/components/CircleSection";
 import StatsSection from "@/components/StatsSection";
 import ContactModal from "@/components/ContactModal";
-import SGeoMorph from "@/components/SGeoMorph";
 import GrowthSection from "@/components/GrowthSection";
 import AIToolsSection from "@/components/AIToolsSection";
 import { initializeSimpleAnimations } from "@/utils/simpleAnimations";
