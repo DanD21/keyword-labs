@@ -12,14 +12,14 @@ const GrowthSection: React.FC = () => {
         <div className="mb-8 md:mb-12">
           <AnimatedText 
             text="AI Strategy & Growth" 
-            textClassName="text-5xl sm:text-5xl md:text-7xl font-light leading-tight reveal-text whitespace-nowrap"
+            textClassName="text-4xl sm:text-4xl md:text-5xl lg:text-7xl font-light leading-tight reveal-text text-center"
             gradientColors="linear-gradient(90deg, #888888 45%, #ffffff 50%, #888888 55%)"
             gradientAnimationDuration={6}
-            className="block"
+            className="block mb-2"
           />
           <AnimatedText 
             text="Partnership" 
-            textClassName="text-5xl sm:text-5xl md:text-7xl font-light leading-tight reveal-text whitespace-nowrap"
+            textClassName="text-4xl sm:text-4xl md:text-5xl lg:text-7xl font-light leading-tight reveal-text text-center"
             gradientColors="linear-gradient(90deg, #00f0ff 45%, #ffffff 50%, #00f0ff 55%)"
             gradientAnimationDuration={6}
             className="block"
@@ -36,7 +36,7 @@ const GrowthSection: React.FC = () => {
           />
         </div>
         
-        <p className="reveal-text text-2xl sm:text-xl md:text-2xl text-gray-300">
+        <p className="reveal-text text-lg sm:text-xl md:text-2xl text-gray-300">
           A dedicated partnership for long-term growth. We provide continuous
           GEO monitoring, proactive automation, and the strategic counsel
           needed to keep you ahead.

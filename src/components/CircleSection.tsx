@@ -75,12 +75,12 @@ const CircleSection: React.FC<CircleSectionProps> = ({
 
         <AnimatedText 
           text={title} 
-          textClassName="text-5xl sm:text-5xl md:text-7xl font-light leading-tight reveal-text whitespace-nowrap"
+          textClassName="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light leading-tight reveal-text text-center"
           gradientColors="linear-gradient(90deg, #888888 45%, #ffffff 50%, #888888 55%)"
           gradientAnimationDuration={6}
           className="mb-6 sm:mb-8"
         />
-        <p className="reveal-text text-2xl sm:text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto">
+        <p className="reveal-text text-lg sm:text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto">
           {description}
         </p>
       </div>
