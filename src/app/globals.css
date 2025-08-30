@@ -222,7 +222,7 @@ body {
 .moving-partners-track {
   display: flex;
   width: 200%; /* Double width for seamless loop */
-  animation: movePartners 25s linear infinite;
+  animation: movePartners 35s linear infinite;
 }
 
 .moving-partners-logos {
@@ -286,10 +286,10 @@ body {
 @media (max-width: 640px) {
   @keyframes movePartners {
     0% {
-      transform: translateX(100%); /* Start from right */
+      transform: translateX(0); /* Start in normal position */
     }
     100% {
-      transform: translateX(-100%); /* Exit to left */
+      transform: translateX(-100%); /* Move to left */
     }
   }
 }
@@ -307,7 +307,7 @@ body {
   
   /* Moving partners optimization for mobile - BIGGER */
   .moving-partners-track {
-    animation-duration: 20s; /* Slightly slower for better visibility */
+    animation-duration: 30s; /* Slower for better visibility */
     width: 500%; /* Much wider track to prevent overlapping */
   }
   
@@ -411,7 +411,7 @@ body {
   
   /* Simple single track approach for small screens */
   .moving-partners-track {
-    animation-duration: 15s; /* Slower for better readability */
+    animation-duration: 22s; /* Slower for better readability */
     width: 100%; /* Simple single track */
   }
   
@@ -452,12 +452,10 @@ body {
 
 /* Static Neon Glow Effects - No Animation */
 
-/* Global Accent Utility Classes with Very Subtle Glow */
+/* Global Accent Utility Classes - Clean Bright Cyan */
 .text-accent {
-  color: var(--accent-blue);
-  text-shadow: 
-    0 0 1px var(--accent-blue),
-    0 0 2px var(--accent-blue);
+  color: #00DDFF; /* Bright Cyan */
+  font-weight: normal; /* Ensure not bold */
 }
 
 .bg-accent {
@@ -551,6 +549,27 @@ body {
   }
   50% {
     transform: translateY(0px);
+  }
+}
+
+/* Popup Animation Keyframes */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
   }
 }
 

@@ -67,26 +67,28 @@ Our process is called <span className="text-accent">Generative Engine Optimizati
       <Section className="solutions-section">
         <div className="px-4 w-full box-border">
           <div className="max-w-6xl mx-auto mb-6 md:mb-8 text-center w-full box-border">
-            <div className="space-y-1">
+            <div className="-space-y-3">
               <AnimatedText 
-                text="From High-Volume Traffic" 
+                text="From Low Volume" 
                 textClassName="text-5xl sm:text-6xl md:text-8xl lg:text-10xl font-light leading-tight reveal-text"
                 gradientColors="linear-gradient(90deg, #888888 45%, #ffffff 50%, #888888 55%)"
                 gradientAnimationDuration={6}
                 className="block"
+                style={{ hyphens: 'none' }}
               />
               <AnimatedText 
-                text="to High-Value Growth" 
+                text="to High Value Growth" 
                 textClassName="text-5xl sm:text-6xl md:text-8xl lg:text-10xl font-light leading-tight reveal-text"
                 gradientColors="linear-gradient(90deg, #00f0ff 45%, #ffffff 50%, #00f0ff 55%)"
                 gradientAnimationDuration={6}
                 className="block"
+                style={{ hyphens: 'none' }}
               />
             </div>
           </div>
           <div className="max-w-4xl mx-auto w-full box-border">
-            <p className="reveal-text text-lg sm:text-xl md:text-2xl mt-6 md:mt-8 " style={{ color: '#D9D9D9' }}>
-              Our GEO approach captures the full spectrum of user intent— creating a path that guides people from their first question to their final decision.
+            <p className="reveal-text text-lg sm:text-xl md:text-2xl mt-6 md:mt-8 " style={{ color: '#D9D9D9', hyphens: 'none' }}>
+              Our GEO approach captures the full spectrum of user intent — from the first question to final decision.
             </p>
           </div>
         </div>
@@ -206,14 +208,14 @@ Our process is called <span className="text-accent">Generative Engine Optimizati
               <div className="text-center">
                 <AnimatedText 
                   text="Scale your growth with a" 
-                  textClassName="text-2xl sm:text-3xl md:text-5xl lg:text-7xl font-light leading-tight reveal-text"
+                  textClassName="text-5xl sm:text-5xl md:text-5xl lg:text-7xl font-light leading-tight reveal-text"
                   gradientColors="linear-gradient(90deg, #888888 45%, #ffffff 50%, #888888 55%)"
                   gradientAnimationDuration={6}
-                  className="block mb-2"
+                  className="block mb-0"
                 />
                 <AnimatedText 
                   text="proven GEO strategy." 
-                  textClassName="text-2xl sm:text-3xl md:text-5xl lg:text-7xl font-light leading-tight reveal-text"
+                  textClassName="text-5xl sm:text-5xl md:text-5xl lg:text-7xl font-light leading-tight reveal-text"
                   gradientColors="linear-gradient(90deg, #888888 45%, #ffffff 50%, #888888 55%)"
                   gradientAnimationDuration={6}
                   className="block mb-8 sm:mb-12"
@@ -223,7 +225,7 @@ Our process is called <span className="text-accent">Generative Engine Optimizati
                 onClick={handleContactOpen}
                 className="border border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg hover:bg-white hover:text-gray-900 transition-colors transform hover:scale-105 transition-all duration-300"
               >
-                Scale Your Rankings →
+                Get in touch →
               </button>
             </div>
           </div>
