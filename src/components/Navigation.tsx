@@ -8,7 +8,7 @@ interface NavigationProps {
 
 const Navigation: React.FC<NavigationProps> = ({ onContactClick }) => {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 p-4 sm:p-6">
+    <nav className="absolute top-0 left-0 right-0 z-50 p-4 sm:p-6">
       <div className="flex justify-between items-center">
         <div className="flex items-center">
           <span className="text-white font-bold text-lg sm:text-xl">keyword labs</span>

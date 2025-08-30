@@ -33,35 +33,17 @@ export default function Home() {
 
   return (
     <main className="scroll-container">
-        <Navigation onContactClick={handleContactOpen} />
-
-      {/* Section 1: Hero */}
-      {/* <HeroSection /> */}
-
-      {/* Section 2: Value Proposition */}
-      {/* <Section className="value-section">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="reveal-text text-5xl sm:text-5xl md:text-7xl font-light leading-tight">
-            We put AI at the center
-            <br />
-            of <span className="text-accent">SEO strategy</span>.
-          </h2>
-          <p className="reveal-text text-2xl sm:text-xl md:text-2xl mt-6 md:mt-8 text-gray-300">
-            Your trusted partner in dominating search rankings with intelligent automation.
-          </p>
-        </div>
-      </Section> */}
-
       <Section className="sgeo-section">
+        <Navigation onContactClick={handleContactOpen} />
         <div className="max-w-4xl mx-auto px-4 w-full box-border">
           <AnimatedText 
             text="SEO rules have changed" 
-            textClassName="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light leading-tight reveal-text text-center"
+            textClassName="text-6xl sm:text-8xl md:text-8xl lg:text-14xl font-light leading-tight reveal-text text-center"
             gradientColors="linear-gradient(90deg, #888888 45%, #ffffff 50%, #888888 55%)"
             gradientAnimationDuration={6}
             className="mb-6 md:mb-8"
           />
-          <p className="reveal-text text-lg sm:text-xl md:text-2xl mt-3 md:mt-4 font-normal" style={{ color: '#D9D9D9' }}>
+          <p className="reveal-text text-xl sm:text-2xl md:text-2xl mt-3 md:mt-4 font-normal" style={{ color: '#D9D9D9' }}>
             {/* That&apos;s not a question; it&apos;s the foundation<br />
             of our collaboration. */}
             Master the New Era of Search with <span className="text-accent">Generative Engine Optimization (GEO)</span>.    
@@ -88,14 +70,14 @@ Our process is called <span className="text-accent">Generative Engine Optimizati
             <div className="space-y-1">
               <AnimatedText 
                 text="From High-Volume Traffic" 
-                textClassName="text-3xl sm:text-4xl md:text-4xl lg:text-6xl font-light leading-tight reveal-text"
+                textClassName="text-5xl sm:text-6xl md:text-8xl lg:text-10xl font-light leading-tight reveal-text"
                 gradientColors="linear-gradient(90deg, #888888 45%, #ffffff 50%, #888888 55%)"
                 gradientAnimationDuration={6}
                 className="block"
               />
               <AnimatedText 
                 text="to High-Value Growth" 
-                textClassName="text-3xl sm:text-4xl md:text-4xl lg:text-6xl font-light leading-tight reveal-text"
+                textClassName="text-5xl sm:text-6xl md:text-8xl lg:text-10xl font-light leading-tight reveal-text"
                 gradientColors="linear-gradient(90deg, #00f0ff 45%, #ffffff 50%, #00f0ff 55%)"
                 gradientAnimationDuration={6}
                 className="block"
@@ -119,14 +101,14 @@ Our process is called <span className="text-accent">Generative Engine Optimizati
           <div className="text-center">
             <AnimatedText 
               text="Our proven 3-step process" 
-              textClassName="text-4xl sm:text-4xl md:text-5xl lg:text-7xl font-light leading-tight reveal-text"
+              textClassName="text-6xl sm:text-6xl md:text-6xl lg:text-7xl font-light leading-tight reveal-text"
               gradientColors="linear-gradient(90deg, #888888 45%, #ffffff 50%, #888888 55%)"
               gradientAnimationDuration={6}
               className="block -mb-3"
             />
             <AnimatedText 
               text="for AI search" 
-              textClassName="text-4xl sm:text-4xl md:text-5xl lg:text-7xl font-light leading-tight reveal-text"
+              textClassName="text-6xl sm:text-6xl md:text-5xl lg:text-7xl font-light leading-tight reveal-text"
               gradientColors="linear-gradient(90deg, #888888 45%, #ffffff 50%, #888888 55%)"
               gradientAnimationDuration={6}
               className="block mb-6 md:mb-8"

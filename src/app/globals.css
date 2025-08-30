@@ -112,6 +112,73 @@ body {
   font-family: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
 }
 
+/* Custom Extra Large Text Size Classes */
+.text-10xl {
+  font-size: 10rem;
+  line-height: 1.1;
+}
+
+.text-12xl {
+  font-size: 12rem;
+  line-height: 1.05;
+}
+
+.text-14xl {
+  font-size: 14rem;
+  line-height: 1.1;
+}
+
+.text-15xl {
+  font-size: 15rem;
+  line-height: 1.1;
+}
+
+.text-20xl {
+  font-size: 20rem;
+  line-height: 1.1;
+}
+
+/* Responsive versions of custom text sizes */
+@media (min-width: 640px) {
+  .sm\:text-10xl { font-size: 10rem; line-height: 1.1; }
+  .sm\:text-12xl { font-size: 12rem; line-height: 1.05; }
+  .sm\:text-14xl { font-size: 14rem; line-height: 1.1; }
+  .sm\:text-15xl { font-size: 15rem; line-height: 1.1; }
+  .sm\:text-20xl { font-size: 20rem; line-height: 1.1; }
+}
+
+@media (min-width: 768px) {
+  .md\:text-10xl { font-size: 10rem; line-height: 1.1; }
+  .md\:text-12xl { font-size: 12rem; line-height: 1.05; }
+  .md\:text-14xl { font-size: 14rem; line-height: 1.1; }
+  .md\:text-15xl { font-size: 15rem; line-height: 1.1; }
+  .md\:text-20xl { font-size: 20rem; line-height: 1.1; }
+}
+
+@media (min-width: 1024px) {
+  .lg\:text-10xl { font-size: 10rem; line-height: 1.1; }
+  .lg\:text-12xl { font-size: 12rem; line-height: 1.05; }
+  .lg\:text-14xl { font-size: 14rem; line-height: 1.1; }
+  .lg\:text-15xl { font-size: 15rem; line-height: 1.1; }
+  .lg\:text-20xl { font-size: 20rem; line-height: 1.1; }
+}
+
+@media (min-width: 1280px) {
+  .xl\:text-10xl { font-size: 10rem; line-height: 1.1; }
+  .xl\:text-12xl { font-size: 12rem; line-height: 1.05; }
+  .xl\:text-14xl { font-size: 14rem; line-height: 1.1; }
+  .xl\:text-15xl { font-size: 15rem; line-height: 1.1; }
+  .xl\:text-20xl { font-size: 20rem; line-height: 1.1; }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:text-10xl { font-size: 10rem; line-height: 1.1; }
+  .\32xl\:text-12xl { font-size: 12rem; line-height: 1.05; }
+  .\32xl\:text-14xl { font-size: 14rem; line-height: 1.1; }
+  .\32xl\:text-15xl { font-size: 15rem; line-height: 1.1; }
+  .\32xl\:text-20xl { font-size: 20rem; line-height: 1.1; }
+}
+
 /* Text reveal animation classes */
 .reveal-text {
   opacity: 0;
