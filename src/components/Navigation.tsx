@@ -13,6 +13,12 @@ const Navigation: React.FC<NavigationProps> = ({ onContactClick }) => {
         <div className="flex items-center gap-4 sm:gap-6">
           <span className="text-white font-bold text-lg sm:text-xl">Dev Chords</span>
           <a
+            href="/blog"
+            className="text-white/80 hover:text-white transition-colors text-sm sm:text-base"
+          >
+            Blog
+          </a>
+          <a
             href="https://www.linkedin.com/in/dan-danilescu/"
             target="_blank"
             rel="noopener noreferrer"
