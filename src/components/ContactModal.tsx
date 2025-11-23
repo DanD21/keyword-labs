@@ -10,11 +10,7 @@ interface ContactModalProps {
 interface FormData {
   name: string;
   email: string;
-  role: string;
   companyName: string;
-  companyWebsite: string;
-  companySize: string;
-  revenueRange: string;
   serviceInterest: string;
   message: string;
 }
@@ -26,11 +22,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
   const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
-    role: '',
     companyName: '',
-    companyWebsite: '',
-    companySize: '',
-    revenueRange: '',
     serviceInterest: '',
     message: ''
   });
@@ -51,11 +43,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
     setFormData({
       name: '',
       email: '',
-      role: '',
       companyName: '',
-      companyWebsite: '',
-      companySize: '',
-      revenueRange: '',
       serviceInterest: '',
       message: ''
     });
@@ -177,64 +165,13 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
           </div>
 
           <input
-            name="role"
-            value={formData.role}
+            name="companyName"
+            value={formData.companyName}
             onChange={handleInputChange}
-            placeholder="Enter role"
+            placeholder="Company / Project name (optional)"
             disabled={isSubmitting}
             className="w-full p-3 border-b border-gray-300 bg-transparent focus:border-gray-900 outline-none transition-colors disabled:opacity-50"
           />
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-            <input
-              name="companyName"
-              value={formData.companyName}
-              onChange={handleInputChange}
-              placeholder="Enter company name"
-              disabled={isSubmitting}
-              className="w-full p-3 border-b border-gray-300 bg-transparent focus:border-gray-900 outline-none transition-colors disabled:opacity-50"
-            />
-            <input
-              name="companyWebsite"
-              value={formData.companyWebsite}
-              onChange={handleInputChange}
-              placeholder="Enter company website"
-              type="url"
-              disabled={isSubmitting}
-              className="w-full p-3 border-b border-gray-300 bg-transparent focus:border-gray-900 outline-none transition-colors disabled:opacity-50"
-            />
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-            <select 
-              name="companySize"
-              value={formData.companySize}
-              onChange={handleInputChange}
-              disabled={isSubmitting}
-              className="w-full p-3 border-b border-gray-300 bg-transparent focus:border-gray-900 outline-none transition-colors disabled:opacity-50"
-            >
-              <option value="">Select company size</option>
-              <option value="1-10 employees">1-10 employees</option>
-              <option value="11-50 employees">11-50 employees</option>
-              <option value="51-200 employees">51-200 employees</option>
-              <option value="201-500 employees">201-500 employees</option>
-              <option value="500+ employees">500+ employees</option>
-            </select>
-            <select 
-              name="revenueRange"
-              value={formData.revenueRange}
-              onChange={handleInputChange}
-              disabled={isSubmitting}
-              className="w-full p-3 border-b border-gray-300 bg-transparent focus:border-gray-900 outline-none transition-colors disabled:opacity-50"
-            >
-              <option value="">Select revenue range</option>
-              <option value="$0 - $1M">$0 - $1M</option>
-              <option value="$1M - $10M">$1M - $10M</option>
-              <option value="$10M - $50M">$10M - $50M</option>
-              <option value="$50M - $100M">$50M - $100M</option>
-              <option value="$100M+">$100M+</option>
-            </select>
-          </div>
 
           <select
             name="serviceInterest"

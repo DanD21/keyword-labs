@@ -35,18 +35,8 @@ export async function POST(request: NextRequest) {
           <h2 style="color: #555; margin-top: 0;">Contact Information</h2>
           <p><strong>Name:</strong> ${formData.name}</p>
           <p><strong>Email:</strong> <a href="mailto:${formData.email}">${formData.email}</a></p>
-          ${formData.role ? `<p><strong>Role:</strong> ${formData.role}</p>` : ''}
+          ${formData.companyName ? `<p><strong>Company/Project:</strong> ${formData.companyName}</p>` : ''}
         </div>
-
-        ${formData.companyName || formData.companyWebsite ? `
-        <div style="background: #f0f8ff; padding: 20px; border-radius: 8px; margin: 20px 0;">
-          <h2 style="color: #555; margin-top: 0;">Company Details</h2>
-          ${formData.companyName ? `<p><strong>Company:</strong> ${formData.companyName}</p>` : ''}
-          ${formData.companyWebsite ? `<p><strong>Website:</strong> <a href="${formData.companyWebsite}" target="_blank">${formData.companyWebsite}</a></p>` : ''}
-          ${formData.companySize ? `<p><strong>Company Size:</strong> ${formData.companySize}</p>` : ''}
-          ${formData.revenueRange ? `<p><strong>Revenue Range:</strong> ${formData.revenueRange}</p>` : ''}
-        </div>
-        ` : ''}
 
         ${formData.serviceInterest ? `
         <div style="background: #f0fff0; padding: 20px; border-radius: 8px; margin: 20px 0;">

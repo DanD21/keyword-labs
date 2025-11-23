@@ -6,6 +6,7 @@ import Section from "@/components/Section";
 import CircleSection from "@/components/CircleSection";
 import StatsSection from "@/components/StatsSection";
 import ContactModal from "@/components/ContactModal";
+import Footer from "@/components/Footer";
 import { initializeSimpleAnimations } from "@/utils/simpleAnimations";
 import { AnimatedText } from "@/components/ui/animated-shiny-text";
 import "@/utils/viewportProtection";
@@ -176,6 +177,9 @@ Our process is called <span className="text-accent">Generative Engine Optimizati
           </div>
         </div>
       </Section>
+
+      {/* Footer */}
+      <Footer onContactClick={handleContactOpen} />
 
       {/* Contact Modal */}
       <ContactModal isOpen={isContactOpen} onClose={handleContactClose} />

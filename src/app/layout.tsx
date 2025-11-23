@@ -10,8 +10,8 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Keyword Labs - AI-Powered GEO Revolution",
-  description: "We put AI at the center of SEO strategy. Your trusted partner in dominating search rankings with intelligent automation.",
+  title: "Dev Chords - Custom Web Solutions That Perform",
+  description: "Showcasing high-performance web development. Specializing in Web Development, Mobile Apps, AI Integration, Full-Stack Solutions, E-commerce, and SEO & GEO. This could be your site.",
 };
 
 export const viewport = {
