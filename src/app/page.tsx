@@ -5,6 +5,8 @@ import Navigation from "@/components/Navigation";
 import Section from "@/components/Section";
 import CircleSection from "@/components/CircleSection";
 import StatsSection from "@/components/StatsSection";
+import TechStackSection from "@/components/TechStackSection";
+import ProjectShowcaseSection from "@/components/ProjectShowcaseSection";
 import ContactModal from "@/components/ContactModal";
 import Footer from "@/components/Footer";
 import { initializeSimpleAnimations } from "@/utils/simpleAnimations";
@@ -142,13 +144,13 @@ Our process is called <span className="text-accent">Generative Engine Optimizati
       {/* Section 8: Stats */}
       <StatsSection />
 
-   {/* Section 4.6: AI Tools */}
-      {/* <AIToolsSection /> */}
+      {/* Section 9: Tech Stack */}
+      <TechStackSection />
 
-      {/* Section 4.7: AI Strategy & Growth Partnership */}
-      {/* <GrowthSection /> */}
-      
-      {/* Section 9: CTA */}
+      {/* Section 10: Project Showcase */}
+      <ProjectShowcaseSection />
+
+      {/* Section 11: CTA */}
       <Section className="cta-section">
         <div className="h-full flex items-center justify-center px-4">
           <div className="max-w-4xl mx-auto text-center w-full box-border">

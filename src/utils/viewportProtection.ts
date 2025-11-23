@@ -149,8 +149,7 @@ export class ViewportProtection {
     const currentWidth = window.innerWidth;
     const currentHeight = window.innerHeight;
     const screenWidth = window.screen.width;
-    const screenHeight = window.screen.height;
-    
+
     // More conservative detection - only trigger on severe issues
     const isExtremelyZoomedOut = (
       currentWidth < 280 || // Very small width
@@ -324,8 +323,8 @@ export class ViewportProtection {
   
   private forceLayoutReflow(): void {
     document.body.style.display = 'none';
-    // Trigger reflow
-    const _ = document.body.offsetHeight;
+    // Trigger reflow - void is used to explicitly ignore the value
+    void document.body.offsetHeight;
     document.body.style.display = '';
   }
   
