@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
 import Navigation from "@/components/Navigation";
 import Section from "@/components/Section";
 import CircleSection from "@/components/CircleSection";
@@ -172,7 +171,7 @@ Our process is called <span className="text-accent">Generative Engine Optimizati
               onClick={handleContactOpen}
               className="border border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg hover:bg-white hover:text-gray-900 transition-colors transform hover:scale-105 transition-all duration-300"
             >
-              Let's build together →
+              Let&apos;s build together →
             </button>
           </div>
         </div>
