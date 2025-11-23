@@ -33,20 +33,18 @@ export default function Home() {
 
   return (
     <main className="scroll-container">
-      <Section className="sgeo-section">
+      <Section className="hero-section">
         <Navigation onContactClick={handleContactOpen} />
         <div className="max-w-4xl mx-auto px-4 w-full box-border">
-          <AnimatedText 
-            text="SEO rules have changed" 
+          <AnimatedText
+            text="Built to perform"
             textClassName="text-6xl sm:text-8xl md:text-8xl lg:text-14xl font-light leading-tight reveal-text text-center"
             gradientColors="linear-gradient(90deg, #888888 45%, #ffffff 50%, #888888 55%)"
             gradientAnimationDuration={6}
             className="mb-6 md:mb-8"
           />
-          <p className="reveal-text text-xl sm:text-2xl md:text-2xl mt-3 md:mt-4 font-normal" style={{ color: '#D9D9D9' }}>
-            {/* That&apos;s not a question; it&apos;s the foundation<br />
-            of our collaboration. */}
-            Master the New Era of Search with <span className="text-accent">Generative Engine Optimization (GEO)</span>.    
+          <p className="reveal-text text-xl sm:text-2xl md:text-2xl mt-3 md:mt-4 font-normal text-center" style={{ color: '#D9D9D9' }}>
+            Custom web solutions that captivate users and <span className="text-accent">drive results</span>.
           </p>
         </div>
       </Section>
@@ -63,21 +61,21 @@ Our process is called <span className="text-accent">Generative Engine Optimizati
         </div>
       </Section> */}
 
-      {/* Section 4: Solutions Built Not Bought */}
-      <Section className="solutions-section">
+      {/* Section 4: Services */}
+      <Section className="services-section">
         <div className="px-4 w-full box-border">
           <div className="max-w-6xl mx-auto mb-6 md:mb-8 text-center w-full box-border">
             <div className="-space-y-3">
-              <AnimatedText 
-                text="From Low Volume" 
+              <AnimatedText
+                text="From Concept"
                 textClassName="text-5xl sm:text-6xl md:text-8xl lg:text-10xl font-light leading-tight reveal-text"
                 gradientColors="linear-gradient(90deg, #888888 45%, #ffffff 50%, #888888 55%)"
                 gradientAnimationDuration={6}
                 className="block"
                 style={{ hyphens: 'none' }}
               />
-              <AnimatedText 
-                text="to High Value Growth" 
+              <AnimatedText
+                text="to Launch & Beyond"
                 textClassName="text-5xl sm:text-6xl md:text-8xl lg:text-10xl font-light leading-tight reveal-text"
                 gradientColors="linear-gradient(90deg, #00f0ff 45%, #ffffff 50%, #00f0ff 55%)"
                 gradientAnimationDuration={6}
@@ -87,8 +85,8 @@ Our process is called <span className="text-accent">Generative Engine Optimizati
             </div>
           </div>
           <div className="max-w-4xl mx-auto w-full box-border">
-            <p className="reveal-text text-lg sm:text-xl md:text-2xl mt-6 md:mt-8 " style={{ color: '#D9D9D9', hyphens: 'none' }}>
-              Our GEO approach captures the full spectrum of user intent — from the first question to final decision.
+            <p className="reveal-text text-lg sm:text-xl md:text-2xl mt-6 md:mt-8 text-center" style={{ color: '#D9D9D9', hyphens: 'none' }}>
+              Web Development • Mobile Apps • AI Integration • Full-Stack Solutions • E-commerce • SEO & GEO • Technical Consulting
             </p>
           </div>
         </div>
@@ -101,15 +99,15 @@ Our process is called <span className="text-accent">Generative Engine Optimizati
       <Section className="process-section">
         <div className="max-w-4xl mx-auto px-4 w-full box-border">
           <div className="text-center">
-            <AnimatedText 
-              text="Our proven 3-step process" 
+            <AnimatedText
+              text="Our streamlined"
               textClassName="text-6xl sm:text-6xl md:text-6xl lg:text-7xl font-light leading-tight reveal-text"
               gradientColors="linear-gradient(90deg, #888888 45%, #ffffff 50%, #888888 55%)"
               gradientAnimationDuration={6}
               className="block -mb-3"
             />
-            <AnimatedText 
-              text="for AI search" 
+            <AnimatedText
+              text="development process"
               textClassName="text-6xl sm:text-6xl md:text-5xl lg:text-7xl font-light leading-tight reveal-text"
               gradientColors="linear-gradient(90deg, #888888 45%, #ffffff 50%, #888888 55%)"
               gradientAnimationDuration={6}
@@ -119,24 +117,24 @@ Our process is called <span className="text-accent">Generative Engine Optimizati
         </div>
       </Section>
 
-      {/* Section 5: Analyze */}
+      {/* Section 5: Discovery */}
       <CircleSection
-        title="Analyze"
-        description="We analyze your site to find opportunities for AI citations, establishing you as a trusted source for modern search engines."
+        title="Discovery"
+        description="We dive deep into your vision, goals, and requirements to create a roadmap that aligns technology with your business objectives."
         circleConfig="concentric"
       />
 
-      {/* Section 6: Optimize */}
+      {/* Section 6: Development */}
       <CircleSection
-        title="Implement"
-        description="We create a clear implementation roadmap and strengthen your E-E-A-T signals with documented case studies and transparent processes."
+        title="Development"
+        description="Using modern tech stacks and best practices, we build scalable, performant solutions with clean code and attention to detail."
         circleConfig="row"
       />
 
-      {/* Section 7: Scale */}
+      {/* Section 7: Delivery */}
       <CircleSection
-        title="Optimize"
-        description="We use advanced structured data and ensure LLM readability so your content is understood and featured in AI-generated answers."
+        title="Delivery"
+        description="From deployment to optimization, we ensure smooth launches and provide ongoing support to keep your product running at peak performance."
         circleConfig="cluster"
       />
       
@@ -150,84 +148,32 @@ Our process is called <span className="text-accent">Generative Engine Optimizati
       {/* Section 4.7: AI Strategy & Growth Partnership */}
       {/* <GrowthSection /> */}
       
-      {/* Section 9: Partners + CTA Combined */}
-      <Section className="partners-cta-section">
-        <div className="h-full flex flex-col">
-          {/* Moving Partners positioned below navbar area */}
-          <div className="absolute top-20 sm:top-32 left-0 w-full py-3 sm:py-4 overflow-hidden">
-            <div className="moving-partners-container">
-              <div className="moving-partners-track">
-                <div className="moving-partners-logos">
-                  <a href="https://easyoutsource.com" target="_blank" rel="noopener noreferrer">
-                    <Image src="/easyOutsource-logo.png" alt="Easy Outsource" width={180} height={60} className="partner-logo-img opacity-100 hover:opacity-120 hover:brightness-110 transition-all" />
-                  </a>
-                  <a href="https://dotteam.com" target="_blank" rel="noopener noreferrer">
-                    <Image src="/dot-logo.png" alt="DOT Team" width={180} height={84} className="partner-logo-img opacity-100 hover:opacity-120 hover:brightness-110 transition-all" />
-                  </a>
-                  <a href="https://thirdstaff.com" target="_blank" rel="noopener noreferrer">
-                    <Image src="/thirdstaff-logo.png" alt="Thirdstaff" width={180} height={72} className="partner-logo-img opacity-100 hover:opacity-120 hover:brightness-110 transition-all" />
-                  </a>
-                  <a href="https://www.baystreetstaffing.com/" target="_blank" rel="noopener noreferrer">
-                    <Image src="/bay-street-logo.png" alt="Bay Street Staffing" width={180} height={72} className="partner-logo-img opacity-100 hover:opacity-120 hover:brightness-110 transition-all" />
-                  </a>
-                  <a href="https://catalina-ai.com/" target="_blank" rel="noopener noreferrer">
-                    <Image src="/catalina-ai-logo.png" alt="Catalina AI" width={180} height={144} className="partner-logo-img opacity-100 hover:opacity-120 hover:brightness-110 transition-all" />
-                  </a>
-                  <a href="https://a1mktg.com" target="_blank" rel="noopener noreferrer">
-                    <span className="partner-logo text-5xl sm:text-6xl font-bold opacity-100 hover:opacity-120 hover:brightness-110 transition-all">A1 MKTG</span>
-                  </a>
-                </div>
-                {/* Duplicate for seamless loop - hidden on small screens */}
-                <div className="moving-partners-logos hidden sm:flex">
-                  <a href="https://easyoutsource.com" target="_blank" rel="noopener noreferrer">
-                    <Image src="/easyOutsource-logo.png" alt="Easy Outsource" width={180} height={60} className="partner-logo-img opacity-100 hover:opacity-120 hover:brightness-110 transition-all" />
-                  </a>
-                  <a href="https://dotteam.com" target="_blank" rel="noopener noreferrer">
-                    <Image src="/dot-logo.png" alt="DOT Team" width={180} height={84} className="partner-logo-img opacity-100 hover:opacity-120 hover:brightness-110 transition-all" />
-                  </a>
-                  <a href="https://thirdstaff.com" target="_blank" rel="noopener noreferrer">
-                    <Image src="/thirdstaff-logo.png" alt="Thirdstaff" width={180} height={72} className="partner-logo-img opacity-100 hover:opacity-120 hover:brightness-110 transition-all" />
-                  </a>
-                  <a href="https://www.baystreetstaffing.com/" target="_blank" rel="noopener noreferrer">
-                    <Image src="/bay-street-logo.png" alt="Bay Street Staffing" width={180} height={72} className="partner-logo-img opacity-100 hover:opacity-120 hover:brightness-110 transition-all" />
-                  </a>
-                  <a href="https://catalina-ai.com/" target="_blank" rel="noopener noreferrer">
-                    <Image src="/catalina-ai-logo.png" alt="Catalina AI" width={180} height={144} className="partner-logo-img opacity-100 hover:opacity-120 hover:brightness-110 transition-all" />
-                  </a>
-                  <a href="https://a1mktg.com" target="_blank" rel="noopener noreferrer">
-                    <span className="partner-logo text-5xl sm:text-6xl font-bold opacity-100 hover:opacity-120 hover:brightness-110 transition-all">A1 MKTG</span>
-                  </a>
-                </div>
-              </div>
+      {/* Section 9: CTA */}
+      <Section className="cta-section">
+        <div className="h-full flex items-center justify-center px-4">
+          <div className="max-w-4xl mx-auto text-center w-full box-border">
+            <div className="text-center">
+              <AnimatedText
+                text="This could be"
+                textClassName="text-5xl sm:text-5xl md:text-5xl lg:text-7xl font-light leading-tight reveal-text"
+                gradientColors="linear-gradient(90deg, #888888 45%, #ffffff 50%, #888888 55%)"
+                gradientAnimationDuration={6}
+                className="block mb-0"
+              />
+              <AnimatedText
+                text="your site."
+                textClassName="text-5xl sm:text-5xl md:text-5xl lg:text-7xl font-light leading-tight reveal-text"
+                gradientColors="linear-gradient(90deg, #00f0ff 45%, #ffffff 50%, #00f0ff 55%)"
+                gradientAnimationDuration={6}
+                className="block mb-8 sm:mb-12"
+              />
             </div>
-          </div>
-
-          {/* CTA Content centered with top margin for partners */}
-          <div className="flex-grow flex items-center justify-center pt-12 sm:pt-16 px-4">
-            <div className="max-w-4xl mx-auto text-center w-full box-border">
-              <div className="text-center">
-                <AnimatedText 
-                  text="Scale your growth with a" 
-                  textClassName="text-5xl sm:text-5xl md:text-5xl lg:text-7xl font-light leading-tight reveal-text"
-                  gradientColors="linear-gradient(90deg, #888888 45%, #ffffff 50%, #888888 55%)"
-                  gradientAnimationDuration={6}
-                  className="block mb-0"
-                />
-                <AnimatedText 
-                  text="proven GEO strategy." 
-                  textClassName="text-5xl sm:text-5xl md:text-5xl lg:text-7xl font-light leading-tight reveal-text"
-                  gradientColors="linear-gradient(90deg, #888888 45%, #ffffff 50%, #888888 55%)"
-                  gradientAnimationDuration={6}
-                  className="block mb-8 sm:mb-12"
-                />
-              </div>
-              <button
-                onClick={handleContactOpen}
-                className="border border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg hover:bg-white hover:text-gray-900 transition-colors transform hover:scale-105 transition-all duration-300"
-              >
-                Get in touch →
-              </button>
-            </div>
+            <button
+              onClick={handleContactOpen}
+              className="border border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg hover:bg-white hover:text-gray-900 transition-colors transform hover:scale-105 transition-all duration-300"
+            >
+              Let's build together →
+            </button>
           </div>
         </div>
       </Section>

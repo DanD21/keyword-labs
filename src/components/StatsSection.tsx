@@ -38,15 +38,15 @@ const StatsSection = () => {
         {/* Titles */}
         <div className="mb-6 md:mb-8 lg:mb-16 text-left md:text-center">
           <div className="-space-y-3">
-            <AnimatedText 
-              text="We don't sell promises." 
+            <AnimatedText
+              text="We don't sell promises."
               textClassName="text-3xl md:text-4xl lg:text-6xl font-light leading-tight reveal-text"
               gradientColors="linear-gradient(90deg, #888888 45%, #ffffff 50%, #888888 55%)"
               gradientAnimationDuration={6}
               className="block text-left md:text-center"
             />
-            <AnimatedText 
-              text="We deliver Rankings." 
+            <AnimatedText
+              text="We deliver Results."
               textClassName="text-3xl md:text-4xl lg:text-6xl font-light leading-tight reveal-text"
               gradientColors="linear-gradient(90deg, #00f0ff 45%, #ffffff 50%, #00f0ff 55%)"
               gradientAnimationDuration={6}
@@ -59,16 +59,16 @@ const StatsSection = () => {
         <div className="flex flex-col md:grid md:grid-cols-3 gap-6 md:gap-12 lg:gap-20 md:max-w-5xl md:mx-auto">
           <div className="border-b border-gray-700 pb-3 md:border-b-0 md:pb-0 text-left md:text-center">
             <div className="flex items-baseline text-left md:justify-center">
-              <div className="text-5xl md:text-6xl lg:text-8xl font-light counter" data-target="350">
+              <div className="text-5xl md:text-6xl lg:text-8xl font-light counter" data-target="99">
                 0
               </div>
               <div className="text-3xl md:text-2xl ml-1">%</div>
             </div>
             <p className="reveal-text text-gray-300 text-sm md:text-base lg:text-lg mt-1 md:mt-4 leading-relaxed text-left md:text-center max-w-xs md:mx-auto">
-              Increase in On-Site Engagement Post-GEO
+              Performance Score on Lighthouse
             </p>
             <div className="text-left md:text-center">
-              <button 
+              <button
                 onClick={openPopup}
                 className="text-accent text-sm md:text-base mt-1 md:mt-3 inline-block hover:underline transition-colors bg-transparent border-none cursor-pointer p-0"
               >
@@ -76,28 +76,28 @@ const StatsSection = () => {
               </button>
             </div>
           </div>
-          
+
           <div className="border-b border-gray-700 pb-3 md:border-b-0 md:pb-0 text-left md:text-center">
             <div className="flex items-baseline text-left md:justify-center">
-              <div className="text-5xl md:text-6xl lg:text-8xl font-light counter" data-target="70">
+              <div className="text-5xl md:text-6xl lg:text-8xl font-light counter" data-target="100">
                 0
               </div>
               <div className="text-3xl md:text-2xl ml-1">%</div>
             </div>
             <p className="reveal-text text-gray-300 text-sm md:text-base lg:text-lg mt-1 md:mt-4 leading-relaxed text-left md:text-center max-w-xs md:mx-auto">
-              Higher Conversion Rates from AI-driven Traffic
+              Client Satisfaction Rate
             </p>
           </div>
-          
+
           <div className="text-left md:text-center">
             <div className="flex items-baseline text-left md:justify-center">
-              <div className="text-5xl md:text-6xl lg:text-8xl font-light counter" data-target="90">
+              <div className="text-5xl md:text-6xl lg:text-8xl font-light counter" data-target="30">
                 0
               </div>
               <div className="text-3xl md:text-2xl ml-1">Days</div>
             </div>
             <p className="reveal-text text-gray-300 text-sm md:text-base lg:text-lg mt-1 md:mt-4 leading-relaxed text-left md:text-center max-w-xs md:mx-auto">
-              Average Time to Break Even on GEO Investment
+              Average Time to Launch MVP
             </p>
           </div>
         </div>

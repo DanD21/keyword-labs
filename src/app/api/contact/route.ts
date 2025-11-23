@@ -28,7 +28,7 @@ export async function POST(request: NextRequest) {
     const emailHtml = `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
         <h1 style="color: #333; border-bottom: 2px solid #00f0ff; padding-bottom: 10px;">
-          🚀 New SEO Inquiry from Website
+          🚀 New Project Inquiry from Dev Chords Showcase
         </h1>
         
         <div style="background: #f9f9f9; padding: 20px; border-radius: 8px; margin: 20px 0;">
@@ -76,7 +76,7 @@ export async function POST(request: NextRequest) {
       from: process.env.FROM_EMAIL || 'contact@yourdomain.com',
       to: process.env.TO_EMAIL || 'your-email@gmail.com',
       replyTo: formData.email,
-      subject: `🚀 New SEO Inquiry from ${formData.name} ${formData.companyName ? `(${formData.companyName})` : ''}`,
+      subject: `🚀 New Project Inquiry from ${formData.name} ${formData.companyName ? `(${formData.companyName})` : ''}`,
       html: emailHtml,
     });
 

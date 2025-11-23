@@ -10,10 +10,18 @@ const Navigation: React.FC<NavigationProps> = ({ onContactClick }) => {
   return (
     <nav className="absolute top-0 left-0 right-0 z-50 p-4 sm:p-6">
       <div className="flex justify-between items-center">
-        <div className="flex items-center">
-          <span className="text-white font-bold text-lg sm:text-xl">keyword labs</span>
+        <div className="flex items-center gap-4 sm:gap-6">
+          <span className="text-white font-bold text-lg sm:text-xl">Dev Chords</span>
+          <a
+            href="https://www.linkedin.com/in/dan-danilescu/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white/80 hover:text-white transition-colors text-sm sm:text-base"
+          >
+            LinkedIn
+          </a>
         </div>
-        <button 
+        <button
           onClick={onContactClick}
           className="border border-white text-white px-4 sm:px-6 py-2 rounded-full text-base sm:text-lg hover:bg-white hover:text-gray-900 transition-colors"
         >

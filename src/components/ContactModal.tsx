@@ -130,7 +130,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
       }`}>
         <div className="flex justify-between items-center mb-6 sm:mb-8">
           <h3 className="text-xl sm:text-2xl font-light text-gray-900">
-            Let&apos;s scale your SEO
+            Let&apos;s build something great
           </h3>
           <button
             onClick={handleClose}
@@ -143,12 +143,12 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
         {/* Success/Error Messages */}
         {submitStatus === 'success' && (
           <div className="mb-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded">
-            ✅ Thank you! Your inquiry has been submitted successfully. We&apos;ll get back to you soon.
+            ✅ Thank you! Your message has been sent. I&apos;ll get back to you within 24 hours.
           </div>
         )}
         {submitStatus === 'error' && (
           <div className="mb-6 p-4 bg-red-100 border border-red-400 text-red-700 rounded">
-            ❌ There was an error submitting your form. Please try again or contact us directly.
+            ❌ There was an error sending your message. Please try again or contact me directly.
           </div>
         )}
 
@@ -236,7 +236,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
             </select>
           </div>
 
-          <select 
+          <select
             name="serviceInterest"
             value={formData.serviceInterest}
             onChange={handleInputChange}
@@ -244,12 +244,13 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
             className="w-full p-3 border-b border-gray-300 bg-transparent focus:border-gray-900 outline-none transition-colors disabled:opacity-50"
           >
             <option value="">Select service</option>
-            <option value="Complete SEO Audit & Strategy">Complete SEO Audit & Strategy</option>
-            <option value="AI-Powered Content Optimization">AI-Powered Content Optimization</option>
-            <option value="Technical SEO & Site Performance">Technical SEO & Site Performance</option>
-            <option value="Link Building & Authority Growth">Link Building & Authority Growth</option>
-            <option value="Local SEO & Maps Optimization">Local SEO & Maps Optimization</option>
-            <option value="Enterprise SEO Management">Enterprise SEO Management</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Mobile App Development">Mobile App Development</option>
+            <option value="AI Integration">AI Integration</option>
+            <option value="Full-Stack Development">Full-Stack Development</option>
+            <option value="E-commerce Solutions">E-commerce Solutions</option>
+            <option value="SEO & GEO Optimization">SEO & GEO Optimization</option>
+            <option value="Technical Consulting">Technical Consulting</option>
             <option value="Other">Other</option>
           </select>
 
