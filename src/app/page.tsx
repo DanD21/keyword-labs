@@ -172,9 +172,16 @@ Our process is called <span className="text-accent">Generative Engine Optimizati
             </div>
             <button
               onClick={handleContactOpen}
-              className="border border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg hover:bg-white hover:text-gray-900 transition-colors transform hover:scale-105 transition-all duration-300"
+              className="group relative inline-flex items-center justify-center px-8 sm:px-12 py-4 sm:py-5 text-lg sm:text-xl font-semibold text-black bg-accent rounded-full overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(0,240,255,0.6)]"
             >
-              Let&apos;s build together →
+              <span className="relative z-10 flex items-center gap-2">
+                Let&apos;s build together
+                <span className="group-hover:translate-x-1 transition-transform duration-300">
+                  →
+                </span>
+              </span>
+              {/* Glow effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-accent via-white to-accent opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
             </button>
           </div>
         </div>
